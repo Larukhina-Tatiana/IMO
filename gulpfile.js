@@ -119,7 +119,7 @@ function images() {
 }
 
 function sprite() {
-  return src("app/images/*.svg")
+  return src("images/src/icons/*.svg")
     .pipe(
       svgSprite({
         mode: {
@@ -130,7 +130,7 @@ function sprite() {
         },
       })
     )
-    .pipe(dest("app/images"));
+    .pipe(dest("images"));
 }
 
 // функция удаления папок

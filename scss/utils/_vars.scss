@@ -1,13 +1,15 @@
 :root {
-    --koromiko: #FFBD59;
-    --quicksand: #BEA495;
-    --zorba: #A5978E;
-    --coffee:#7B6152;
-    --peach: #FFF8F3;
-    --gray: #FAFAFA;
-    --gray1: #333333;
-    --black: #000;
+    --black: #1d1d1d;
     --white: #FFFFFF;
+    --background: #FCFCFC;
+    --main-color: #565656;
+    --green: #13ed1c;
+    --red: #ed1331;
+    --yellow: #FFF500;
+
+    --scroll-track: rgba(163, 163, 163, .2);
+
+
 }
 
 
@@ -15,6 +17,7 @@
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 }
+
 // @include transition ($transition-property: color);
 
 

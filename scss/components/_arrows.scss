@@ -1,0 +1,13 @@
+.arrow-prev {
+  font-weight: 600;
+  font-size: rem(10);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: rem(30);
+
+  &__svg {
+    display: inline-block;
+    margin-left: rem(4);
+  }
+}
