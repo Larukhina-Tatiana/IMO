@@ -156,6 +156,10 @@ button,
 //   background-repeat: no-repeat;
 // }
 // }
+.flex {
+    display: flex;
+    align-items: center;
+}
 
 .visually-hidden {
     position: absolute;

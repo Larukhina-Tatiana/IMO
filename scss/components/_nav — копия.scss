@@ -1,59 +1,6 @@
 .nav {
 
-  &__link {
-
-    // для мобилы
-    // color: var(--main-color);
-    // width: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-
-
-    &--color {
-      background-color: var(--red);
-      border-radius: rem(50);
-      padding: rem(13) rem(27);
-      margin-right: rem(30);
-      @include transition ($transition-property: (scale, background-color, box-shadow));
-
-      @media (any-hover: hover) {
-        &:hover {
-          background-color: var(--red);
-          scale: 1.2;
-          box-shadow: 1px 5px 10px -5px red;
-
-          + .header__menu-main-submenu {
-            display: block;
-          }
-        }
-      }
-
-      // mobile
-      // padding: rem(20);
-      // color: var(--red);
-      // justify-content: center;
-    }
-
-    // mobile
-    &--svg {
-      &::after {
-        content: '%';
-      }
-    }
-
-  }
-
-  &__submenu-title {
-    font-weight: 600;
-    font-size: rem(14);
-    line-height: 1;
-    text-transform: uppercase;
-    color: var(--black);
-    margin-bottom: rem(30);
-  }
-
-
+  background-color: var(--background);
 
   &__menu-btn {
     position: relative;
@@ -98,17 +45,49 @@
 
 
 
-  //  mobile
-  // &__item {
-  //   background-color: var(--white);
 
-  //   &:not(:last-child) {
-  //     margin-bottom: rem(20);
-  //   }
+  &__item {
+    background-color: var(--white);
 
-  // }
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+
+  }
+
+  &__link {
+    width: 100%;
+    padding: 0 rem(22) 0 rem(30);
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 
+    &--color {
+      padding: rem(20);
+      color: var(--red);
+      justify-content: center;
+    }
+
+    &--svg {
+      &::after {
+        content: '%';
+      }
+    }
+
+    @include transition ($transition-property: scale);
+
+    @media (any-hover: hover) {
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
 
   &__submenu-list {
     display: none;
@@ -145,24 +124,25 @@
         // width: rem(211);
       }
     }
+  }
 
 
-    &__submenu-item {
-      margin-bottom: rem(20);
-    }
 
-    &__submenu-item-title {
-      font-weight: 600;
-      font-size: rem(16);
-      line-height: 1;
-      text-transform: uppercase;
-      color: var(--black);
-    }
+  &__submenu-item {
+    margin-bottom: rem(20);
+  }
 
-    &__submenu-link {
-      font-size: rem(14);
-      line-height: 1;
-      color: var(--black);
-    }
+  &__submenu-item-title {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  &__submenu-link {
+    font-size: rem(14);
+    line-height: 1;
+    color: var(--black);
   }
 }

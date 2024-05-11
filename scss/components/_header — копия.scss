@@ -1,0 +1,108 @@
+.header {
+
+  &__logo {}
+
+  &__offer {
+    padding: rem(18) 0 rem(21);
+    font-weight: 600;
+    font-size: clamp(0.625rem, 0.525rem + 0.43vw, 0.875rem);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+  }
+
+  &-body {
+    background-color: var(--black);
+    padding: rem(23) 0;
+    color: var(--white);
+  }
+
+  &-body__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-body__wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  &-body__menu {
+    display: none;
+
+    &.menu--open {
+      padding: 0 0 rem(16) rem(16);
+      display: block;
+      position: absolute;
+      width: rem(329);
+      height: 100vh;
+      color: var(--main-color);
+      top: 0;
+      left: 0;
+      background-color: var(--background);
+      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+      z-index: 2;
+      overflow-y: auto;
+      overflow-x: hidden;
+      // scrollbar-width: thin;
+      // scrollbar-color: var(--main-color) var(--scroll-track);
+
+      &::-webkit-scrollbar {
+        width: rem(3);
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: var(--scroll-track);
+        border-radius: rem(3);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--main-color);
+        border-radius: rem(3);
+        // width: rem(211);
+      }
+    }
+  }
+
+
+  &-body__icons {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+
+    & a {
+      color: var(--white);
+    }
+  }
+
+  &-body__menu-hat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(17) rem(14) rem(12) 0;
+    background-color: var(--background);
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: rem(20);
+  }
+
+  &__icons-svg {
+    color: var(--white);
+  }
+
+  &__location {
+    &-svg {
+      margin-right: rem(8);
+    }
+  }
+
+  &__search-form {
+    margin-bottom: rem(30);
+  }
+
+  &-bottom {
+    display: none;
+  }
+}

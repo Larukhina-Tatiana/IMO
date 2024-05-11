@@ -1,6 +1,5 @@
 .header {
 
-  &__logo {}
 
   &__offer {
     padding: rem(18) 0 rem(21);
@@ -12,69 +11,165 @@
     text-align: center;
   }
 
-  &-body {
+  &__menu-main-bg {
     background-color: var(--black);
-    padding: rem(23) 0;
-    color: var(--white);
   }
 
-  &-body__inner {
+  &__menu-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--white);
   }
 
-  &-body__wrapper {
+  &__menu-main-rightrow {
     display: flex;
     align-items: center;
     gap: rem(20);
   }
 
-  &-body__menu {
-    display: none;
 
-    &.menu--open {
-      padding: 0 0 rem(16) rem(16);
-      display: block;
-      position: absolute;
-      width: rem(329);
-      height: 100vh;
-      color: var(--main-color);
-      top: 0;
-      left: 0;
-      background-color: var(--background);
-      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
-      z-index: 2;
-      overflow-y: auto;
-      overflow-x: hidden;
-      // scrollbar-width: thin;
-      // scrollbar-color: var(--main-color) var(--scroll-track);
 
-      &::-webkit-scrollbar {
-        width: rem(3);
+  &__link {
+    padding: rem(29) rem(34);
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--white);
+    @include transition ($transition-property: (box-shadow, background-color));
+
+    &:hover .header__menu-main-submenu {
+      // transform: translateY(0);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--active);
+        box-shadow: 1px 5px 10px -5px black;
+      }
+    }
+
+    &--active {
+      background-color: var(--active);
+    }
+  }
+
+  &__location {
+    padding: rem(28) rem(34);
+    gap: rem(8);
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--black);
       }
 
-      &::-webkit-scrollbar-track {
-        background-color: var(--scroll-track);
-        border-radius: rem(3);
-      }
+    }
+  }
 
-      &::-webkit-scrollbar-thumb {
+
+  &__menu-main-submenu {
+    // display: none;
+    position: absolute;
+    width: 100%;
+    // height: rem(422);
+    top: rem(127);
+    left: 0;
+    // transform: translateY(-100%);
+
+    background: #f6f6f6;
+    padding: rem(47) rem(63);
+    justify-content: space-between;
+  }
+
+  &__link-submenu {
+    padding: rem(10) rem(10);
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1;
+    color: var(--black);
+    @include transition ($transition-property: (box-shadow, background-color, transform));
+
+    @media (any-hover: hover) {
+      &:hover {
         background-color: var(--main-color);
-        border-radius: rem(3);
-        // width: rem(211);
+        box-shadow: 1px 5px 10px -5px black;
+        color: var(--white);
+        transform: translateX(5px);
       }
     }
   }
 
 
-  &-body__icons {
+
+
+
+
+  // &-body__menu {
+  //   display: none;
+
+  //   &.menu--open {
+  //     padding: 0 0 rem(16) rem(16);
+  //     display: block;
+  //     position: absolute;
+  //     width: rem(329);
+  //     height: 100vh;
+  //     color: var(--main-color);
+  //     top: 0;
+  //     left: 0;
+  //     background-color: var(--background);
+  //     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+  //     z-index: 2;
+  //     overflow-y: auto;
+  //     overflow-x: hidden;
+  //     // scrollbar-width: thin;
+  //     // scrollbar-color: var(--main-color) var(--scroll-track);
+
+  //     &::-webkit-scrollbar {
+  //       width: rem(3);
+  //     }
+
+  //     &::-webkit-scrollbar-track {
+  //       background-color: var(--scroll-track);
+  //       border-radius: rem(3);
+  //     }
+
+  //     &::-webkit-scrollbar-thumb {
+  //       background-color: var(--main-color);
+  //       border-radius: rem(3);
+  //       // width: rem(211);
+  //     }
+  //   }
+  // }
+
+
+  &__menu-main-icons {
     display: flex;
     align-items: center;
     gap: rem(20);
 
+
     & a {
       color: var(--white);
+      @include transition ($transition-property: scale);
+
+      @media (any-hover: hover) {
+        &:hover {
+          // transform: translateX(8px);
+          scale: 1.2;
+        }
+      }
+    }
+  }
+
+  &__search-btn {
+    @include transition ($transition-property: scale);
+
+    @media (any-hover: hover) {
+      &:hover {
+        // transform: translateX(8px);
+        scale: 1.1;
+      }
     }
   }
 
@@ -92,11 +187,7 @@
     color: var(--white);
   }
 
-  &__location {
-    &-svg {
-      margin-right: rem(8);
-    }
-  }
+
 
   &__search-form {
     margin-bottom: rem(30);
