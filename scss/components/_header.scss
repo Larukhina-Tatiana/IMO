@@ -71,11 +71,6 @@
           }
         }
       }
-
-      // mobile
-      // padding: rem(20);
-      // color: var(--red);
-      // justify-content: center;
     }
   }
 
@@ -93,13 +88,11 @@
 
 
   &__menu-main-submenu {
-    // display: none;
     position: absolute;
     width: 100%;
-    // height: rem(422);
     top: rem(160);
     left: 0;
-    // transform: translateY(-200%);
+    transform: translateY(-200%);
 
     background: #f6f6f6;
     padding: rem(47) clamp(2.063rem, -5.156rem + 11.28vw, 3.938rem);
@@ -154,7 +147,13 @@
 
 
     &__menu-main-submenu {
-      display: none;
+      display: block;
+    }
+
+    &__submenu-box {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
     }
 
     &__link {

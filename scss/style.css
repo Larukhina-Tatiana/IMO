@@ -227,6 +227,7 @@ body {
   width: 100%;
   top: 10rem;
   left: 0;
+  transform: translateY(-200%);
   background: #f6f6f6;
   padding: 2.9375rem clamp(2.063rem, -5.156rem + 11.28vw, 3.938rem);
   justify-content: space-between;
@@ -272,7 +273,10 @@ body {
     box-shadow: none;
   }
   .header__menu-main-submenu {
-    display: none;
+    display: block;
+  }
+  .header__submenu-box:not(:last-child) {
+    margin-bottom: 1.875rem;
   }
   .header__link {
     padding: 0 1.5625rem 0 1.875rem;
