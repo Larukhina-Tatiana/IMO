@@ -17,7 +17,9 @@
 
     &:hover {
       .header__menu-main-submenu {
-        transform: translateY(0);
+        // transform: translateY(0);
+        opacity: 1;
+        // display: block;
       }
     }
   }
@@ -123,6 +125,10 @@
 
     &-main__list {
       display: block;
+
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
     }
 
 
@@ -142,11 +148,12 @@
     }
 
     &-main__mobile-hat {
-
       background-color: var(--background);
-
     }
 
+    &-extra__list {
+      display: block;
+    }
 
   }
 

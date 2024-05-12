@@ -19,6 +19,8 @@ $(".nav__menu-btn").on("click", function () {
 
 if ($(window).width() < 1023.99) {
   $(".header__location").appendTo($(".header__menu-main-rightrow--mobile"));
+
+  $(".nav-extra__list").appendTo($(".nav-main"));
 }
 
 // // $(function () {

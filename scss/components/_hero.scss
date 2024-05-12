@@ -1,0 +1,24 @@
+.hero {
+
+  &__slider-images {
+    display: flex;
+  }
+
+  &__slider-images-thumb {
+    position: relative;
+    // background-color: var(--green);
+    width: rem(430);
+    height: rem(646);
+    overflow: hidden;
+    object-fit: cover;
+
+  }
+
+  &__slider-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // width: 100%;
+  }
+}
