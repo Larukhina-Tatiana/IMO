@@ -14,12 +14,12 @@
 })();
 
 $(".nav__menu-btn").on("click", function () {
-  $(".header-body__menu").toggleClass("menu--open");
+  $(".nav-main").toggleClass("menu--open");
 });
 
-$(".header-body__link").on("click", function () {
-  $(".nav__submenu-list").toggleClass("menu--open");
-});
+if ($(window).width() < 1023.99) {
+  $(".header__location").appendTo($(".header__menu-main-rightrow--mobile"));
+}
 
 // // $(function () {
 // // $(".reviews__slider").slick({

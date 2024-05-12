@@ -1,0 +1,22 @@
+.additional {
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(34);
+    }
+  }
+
+  &__link {
+    padding: 0 0 0 clamp(0.625rem, -4.187rem + 7.52vw, 1.875rem);
+    background-color: var(--white);
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--black);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

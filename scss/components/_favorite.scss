@@ -1,0 +1,20 @@
+.favorite {
+
+  &__box-title {
+    margin-bottom: rem(25);
+  }
+
+  &__list {
+    max-width: rem(244);
+    flex-wrap: wrap;
+    gap: rem(31) clamp(1rem, -3.812rem + 7.52vw, 2.25rem);
+  }
+
+  &__link {
+    text-align: center;
+
+    &-img {
+      margin-bottom: rem(10);
+    }
+  }
+}

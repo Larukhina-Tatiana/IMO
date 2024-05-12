@@ -22,8 +22,14 @@
 
     <p class="header__offer container">Lorem ipsum is placeholder text commonly used -20%</p>
     <div class="header__menu-main-bg">
-      <div class="header__menu-main container">
+      <div class="header__menu-main container flex">
         <div class="header__menu-main-rightrow">
+          <button class="nav__menu-btn">
+            <span class="nav__menu-btn-line"></span>
+            <span class="nav__menu-btn-line"></span>
+            <span class="nav__menu-btn-line"></span>
+            <span class="nav__menu-btn-line"></span>
+          </button>
           <a class="header__logo logo" href="./index.html">logo</a>
           <a class="header__location header__link flex" href="">
             <svg class="header__location-svg" aria-label="иконка геолокации" width="16" height="16" viewBox="0 0 16 16"
@@ -42,88 +48,182 @@
             Киев</a>
         </div>
         <nav class="nav-main">
+          <div class="nav-main__mobile">
+            <div class="nav-main__mobile-hat">
+              <div class="header__menu-main-rightrow header__menu-main-rightrow--mobile">
+                <a class="logo logo--mobile" href="./index.html">logo</a>
+              </div>
+              <form action="#" class="header__search-form search__form">
+                <div class="search__box">
+                  <input class="search__input" type="text" placeholder="Поиск" autocomplete="off">
+                  <button class="search__btn" type="submit">
+                    <svg class="header__icons-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+                        stroke="#565656" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M16.4429 16.4438L20.9992 21.0001" stroke="#565656" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
           <ul class="nav-main__list nav__list flex">
             <li class="nav__item">
-              <a class="header__link nav__link--color" href="">SALE</a>
+              <a class="header__link header__link--color header__link--svg" href="">SALE</a>
             </li>
             <li class="nav__item">
-              <a class="header__link header__link--active" href="">Женщинам</a>
+              <a class="header__link header__link--active" href="">Женщинам
+                <img class="header__link-img" src="image/png" srcset="
+                  ./images/menu/image3@1x.png 1x,
+                  ./images/menu/image3@2x.png 2x" loading="lazy" decoding="async" alt="иконка женщинам">
+              </a>
               <div class="header__menu-main-submenu flex">
-                <ul class="nav-main__submenu">
-                  <li class="nav__item-submenu">
-                    <p class="nav__submenu-title">
-                      Женщинам
-                    </p>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Просмотреть все</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Бестселлеры</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Новое в разделе “Одежда”</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Пуховики и куртки</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Худи и Свитшоты</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Джинсы</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Футболки</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Свитера</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Джоггеры</a>
-                  </li>
-                </ul>
-                <ul class="nav-main__submenu">
-                  <li class="nav__item-submenu">
-                    <p class="nav__submenu-title">
-                      Новинки брендов
-                    </p>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Adidas</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">New Balance</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Bape</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Nike</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Carhartt</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Vlone</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">The North Face</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Gap</a>
-                  </li>
-                  <li class="nav__item-submenu">
-                    <a class="header__link-submenu" href="">Vanse</a>
-                  </li>
-                </ul>
+                <div class="header__submenu-box">
+                  <p class="nav__submenu-title">
+                    Женщинам
+                  </p>
+                  <ul class="nav-main__submenu">
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Просмотреть все</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Бестселлеры</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Новое в разделе “Одежда”</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Пуховики и куртки</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Худи и Свитшоты</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Джинсы</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Футболки</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Свитера</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Джоггеры</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__submenu-box">
+                  <p class="nav__submenu-title">
+                    Новинки брендов
+                  </p>
+                  <ul class="nav-main__submenu">
+                    <li class="nav__item-submenu">
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Adidas</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">New Balance</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Bape</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Nike</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Carhartt</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Vlone</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">The North Face</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Gap</a>
+                    </li>
+                    <li class="nav__item-submenu">
+                      <a class="header__link-submenu" href="">Vanse</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="favorite__box">
+                  <p class="favorite__box-title nav__submenu-title">
+                    Топ избранных
+                  </p>
+                  <ul class="favorite__list flex">
+                    <li class="favorite__item">
+                      <a class="favorite__link header__link-submenu">
+                        <img class="favorite__link-img" src="image/png" srcset="
+                        ./images/icons/favorite/favorite-icon1@1x.png 1x,
+                        ./images/icons/favorite/favorite-icon1@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка футболки">
+                        Футболки</a>
+                    </li>
+                    <li class="favorite__item">
+                      <a class="favorite__link header__link-submenu" href="">
+                        <img class="favorite__link-img" src="image/png" srcset="
+                        ./images/icons/favorite/favorite-icon2@1x.png 1x,
+                        ./images/icons/favorite/favorite-icon2@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка Свитшоты">Свитшоты</a>
+                    </li>
+                    <li class="favorite__item">
+                      <a class="favorite__link header__link-submenu" href="">
+                        <img class="favorite__link-img" src="image/png" srcset="
+                        ./images/icons/favorite/favorite-icon3@1x.png 1x,
+                        ./images/icons/favorite/favorite-icon3@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка Худи">Худи</a>
+                    </li>
+                    <li class="favorite__item">
+                      <a class="favorite__link header__link-submenu" href="">
+                        <img class="favorite__link-img" src="image/png" srcset="
+                        ./images/icons/favorite/favorite-icon4@1x.png 1x,
+                        ./images/icons/favorite/favorite-icon4@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка Лонгсливы">Лонгсливы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__submenu-box">
+                  <ul class="additional__list">
+                    <li class="additional__item">
+                      <a class="additional__link header__link-submenu">Худи и толстовки
+                        <img class="additional__link-img" src="image/png" srcset="
+                                        ./images/menu/additional1@1x.png 1x,
+                                        ./images/menu/additional1@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка Худи и толстовки">
+                      </a>
+                    </li>
+                    <li class="additional__item">
+                      <a class="additional__link header__link-submenu" href="">Ветровки
+                        <img class="additional__link-img" src="image/png" srcset="
+                                        ./images/menu/additional2@1x.png 1x,
+                                        ./images/menu/additional2@2x.png 2x" loading="lazy" decoding="async"
+                          alt="иконка Ветровки"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
             </li>
             <li class="nav__item">
-              <a class="header__link" href="">Мужчинам</a>
+              <a class="header__link" href="">Мужчинам
+                <img class="header__link-img" src="image/png" srcset="
+                                  ./images/menu/image2@1x.png 1x,
+                                  ./images/menu/image2@2x.png 2x" loading="lazy" decoding="async"
+                  alt="иконка Мужчинам">
+              </a>
             </li>
             <li class="nav__item">
-              <a class="header__link" href="">Детям</a>
+              <a class="header__link" href="">Детям
+                <img class="header__link-img" src="image/png" srcset="
+                  ./images/menu/image4@1x.png 1x,
+                  ./images/menu/image4@2x.png 2x" loading="lazy" decoding="async" alt="иконка Детям">
+              </a>
             </li>
           </ul>
         </nav>
