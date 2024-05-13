@@ -10,6 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap');
   </style>
   <link rel="stylesheet" href="scss/modern-normalize.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
   <!-- <script>history.go(-1)</script> -->
   <!-- <link rel="stylesheet" href="./js/swiper-bundle.min.css"> -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
@@ -1198,49 +1199,60 @@
 
   <main>
     <section class="hero container">
+      <div class="hero__content">
+        <h1 class="hero__title">Spring mood</h1>
+        <p class="hero__text">-20% на новую коллекцию.</p>
+        <a class="hero__link" href="#">В каталог
+          <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64644L21.1716 0.464464C20.9763 0.269202 20.6597 0.269202 20.4645 0.464464C20.2692 0.659727 20.2692 0.976309 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.73079 20.9763 7.73079 21.1716 7.53553L24.3536 4.35355ZM4.37114e-08 4.5L24 4.5L24 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
       <div class="hero__slider">
         <div class="hero__slider-item">
-          <div class="hero__slider-images">
-            <div class="hero__slider-images-thumb" style="background-color: var(--green)">
-              <img class="hero__slider-img" src="image/png" srcset="
+          <div class="hero__slider-images-thumb" style="background-color: var(--green)">
+            <img class="hero__slider-img" src="image/png" srcset="
                 ./images/hero/image1@1x.png 1x,
                 ./images/hero/image1@2x.png 2x" loading="lazy" decoding="async" alt="Изображение мужчины">
-            </div>
-            <div class="hero__slider-images-thumb" style="background-color: var(--yellow)">
-              <img class="hero__slider-img" src="image/png" srcset="
-                ./images/hero/image2@1x.png 1x,
-                ./images/hero/image2@2x.png 2x" loading="lazy" decoding="async" alt="Изображение женщины">
-            </div>
-            <div class="hero__slider-images-thumb" style="background-color: var(--orang)">
-              <img class="hero__slider-img" src="image/png" srcset="
-                ./images/hero/image3@1x.png 1x,
-                ./images/hero/image3@2x.png 2x" loading="lazy" decoding="async" alt="Изображение ребёнка">
-            </div>
           </div>
         </div>
         <div class="hero__slider-item">
-          <div class="hero__slider-images">
-            <div class="hero__slider-images-thumb" style="background-color: var(--green)">
-              <img class="hero__slider-img" src="image/png" srcset="
-                ./images/hero/image4@1x.png 1x,
-                ./images/hero/image4@2x.png 2x" loading="lazy" decoding="async" alt="Изображение мужчины">
-            </div>
-            <div class="hero__slider-images-thumb" style="background-color: var(--yellow)">
-              <img class="hero__slider-img" src="image/png" srcset="
+          <div class="hero__slider-images-thumb" style="background-color: var(--yellow)">
+            <img class="hero__slider-img" src="image/png" srcset="
                 ./images/hero/image2@1x.png 1x,
                 ./images/hero/image2@2x.png 2x" loading="lazy" decoding="async" alt="Изображение женщины">
-            </div>
-            <div class="hero__slider-images-thumb" style="background-color: var(--orang)">
-              <img class="hero__slider-img" src="image/png" srcset="
-                ./images/hero/image3@1x.png 1x,
-                ./images/hero/image3@2x.png 2x" loading="lazy" decoding="async" alt="Изображение ребёнка">
-            </div>
           </div>
         </div>
-        <h3 class="hero__slider-title">Spring mood</h3>
-        <p class="hero__slider-text">-20% на новую коллекцию.</p>
-        <a class="hero__slider-btn" href="#">В каталог</a>
-
+        <div class="hero__slider-item">
+          <div class="hero__slider-images-thumb" style="background-color: var(--orang)">
+            <img class="hero__slider-img" src="image/png" srcset="
+                ./images/hero/image3@1x.png 1x,
+                ./images/hero/image3@2x.png 2x" loading="lazy" decoding="async" alt="Изображение ребёнка">
+          </div>
+        </div>
+        <div class="hero__slider-item">
+          <div class="hero__slider-images-thumb" style="background-color: var(--green)">
+            <img class="hero__slider-img" src="image/png" srcset="
+                ./images/hero/image4@1x.png 1x,
+                ./images/hero/image4@2x.png 2x" loading="lazy" decoding="async" alt="Изображение мужчины">
+          </div>
+        </div>
+        <div class="hero__slider-item">
+          <div class="hero__slider-images-thumb" style="background-color: var(--yellow)">
+            <img class="hero__slider-img" src="image/png" srcset="
+                ./images/hero/image2@1x.png 1x,
+                ./images/hero/image2@2x.png 2x" loading="lazy" decoding="async" alt="Изображение женщины">
+          </div>
+        </div>
+        <div class="hero__slider-item">
+          <div class="hero__slider-images-thumb" style="background-color: var(--orang)">
+            <img class="hero__slider-img" src="image/png" srcset="
+                ./images/hero/image3@1x.png 1x,
+                ./images/hero/image3@2x.png 2x" loading="lazy" decoding="async" alt="Изображение ребёнка">
+          </div>
+        </div>
       </div>
 
 
@@ -1278,6 +1290,7 @@
     </footer> -->
   <!-- </div> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
   <!-- <script src="js/swiper-bundle.min.js"></script> -->
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 

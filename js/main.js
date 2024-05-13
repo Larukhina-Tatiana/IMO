@@ -23,6 +23,30 @@ if ($(window).width() < 1023.99) {
   $(".nav-extra__list").appendTo($(".nav-main"));
 }
 
+$(function () {
+  $(".hero__slider").slick({
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    nextArrow:
+      '<button type="button" class="slick-arrow slick-next"><img src="./images/icons/arrow-next-slider.svg" alt="next arrow"></button>',
+    prevArrow:
+      '<button type="button" class="slick-arrow slick-prev"><img src="./images/icons/arrow-prev-slider.svg" alt="prev arrow"></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {},
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+});
+
 // // $(function () {
 // // $(".reviews__slider").slick({
 // //   dots: true,
