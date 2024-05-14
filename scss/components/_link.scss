@@ -1,0 +1,26 @@
+.link {
+
+  width: rem(173);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+
+  font-weight: 600;
+  font-size: rem(14);
+  text-transform: uppercase;
+  color: var(--white);
+  background: #404444;
+  @include transition ($transition-property: (box-shadow, background-color, scale));
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--active);
+      box-shadow: 1px 5px 10px -5px black;
+      scale: 1.1;
+    }
+  }
+}

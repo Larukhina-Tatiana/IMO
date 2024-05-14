@@ -23,29 +23,62 @@ if ($(window).width() < 1023.99) {
   $(".nav-extra__list").appendTo($(".nav-main"));
 }
 
-$(function () {
-  $(".hero__slider").slick({
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    nextArrow:
-      '<button type="button" class="slick-arrow slick-next"><img src="./images/icons/arrow-next-slider.svg" alt="next arrow"></button>',
-    prevArrow:
-      '<button type="button" class="slick-arrow slick-prev"><img src="./images/icons/arrow-prev-slider.svg" alt="prev arrow"></button>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {},
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pag",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  breakpoints: {
+    661: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        type: "fraction",
       },
-      {
-        breakpoint: 640,
-        settings: {
-          arrows: false,
-        },
+    },
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      pagination: {
+        type: "fraction",
       },
-    ],
-  });
+    },
+  },
 });
+
+// $(function () {
+//   $(".hero__slider").slick({
+//     dots: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     nextArrow:
+//       '<button type="button" class="slick-arrow slick-next"><img src="./images/icons/arrow-next-slider.svg" alt="next arrow"></button>',
+//     prevArrow:
+//       '<button type="button" class="slick-arrow slick-prev"><img src="./images/icons/arrow-prev-slider.svg" alt="prev arrow"></button>',
+//     responsive: [
+//       {
+//         breakpoint: 1024.99,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 769,
+//         settings: {
+//           arrows: false,
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//         },
+//       },
+//     ],
+//   });
+// });
 
 // // $(function () {
 // // $(".reviews__slider").slick({

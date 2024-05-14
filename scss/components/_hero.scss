@@ -1,12 +1,15 @@
 .hero {
   position: relative;
 
+
+
   &__content {
     position: absolute;
+    width: clamp(20.875rem, 13.882rem + 29.84vw, 37.938rem);
+    height: clamp(17.375rem, 14.737rem + 11.26vw, 23.813rem);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: rem(88) rem(91);
     text-align: center;
     font-weight: 500;
     line-height: 1;
@@ -15,59 +18,37 @@
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.7);
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
-    font-size: rem(64);
+    font-size: clamp(2.5rem, 1.885rem + 2.62vw, 4rem);
     margin-bottom: rem(30);
   }
 
   &__text {
-    font-size: rem(30);
+    font-size: clamp(1.25rem, 0.994rem + 1.09vw, 1.875rem);
     margin-bottom: rem(30);
-  }
-
-  &__link {
-    max-width: rem(173);
-    margin: 0 auto;
-    border-radius: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(10);
-
-    font-weight: 600;
-    font-size: rem(14);
-    text-transform: uppercase;
-    color: var(--white);
-    background: #404444;
-    @include transition ($transition-property: (box-shadow, background-color, scale));
-
-    @media (any-hover: hover) {
-      &:hover {
-        background-color: var(--active);
-        box-shadow: 1px 5px 10px -5px black;
-        scale: 1.1;
-      }
-    }
   }
 
   &__slider {
     position: relative;
   }
 
-  &__slider-images {
+  &__slider-item {
     display: flex;
+    justify-content: center;
   }
 
   &__slider-images-thumb {
     position: relative;
     width: rem(430);
-    height: rem(646);
+    height: clamp(26.125rem, 20.394rem + 24.78vw, 40.375rem);
     overflow: hidden;
     object-fit: cover;
-
   }
 
   &__slider-img {
@@ -76,35 +57,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
-}
 
-.slick-arrow {
-  position: absolute;
-  bottom: rem(37);
-  z-index: 2;
-}
+  @media screen and (width < 578px) {
+    &.container {
+      padding: 0;
+    }
 
-.slick-next {
-  right: rem(92);
-}
-
-.slick-prev {
-  right: rem(30);
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: rem(35);
-  display: flex;
-  right: rem(64);
-  font-size: rem(14);
-  line-height: 1;
-
-  li {
-    &:not(:last-child)::after {
-      content: '/';
-
+    &__slider-img {
+      aspect-ratio: 3 / 4;
     }
   }
-
 }
