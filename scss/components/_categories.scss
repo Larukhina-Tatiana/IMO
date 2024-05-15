@@ -1,0 +1,26 @@
+.categories {
+
+  &__tabs {
+    gap: rem(30);
+    margin-bottom: rem(20);
+  }
+
+  &__tabs-link-thumb {
+    position: relative;
+    width: rem(130);
+    height: rem(130);
+    margin-bottom: rem(20);
+    border-radius: 50%;
+
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__link-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
