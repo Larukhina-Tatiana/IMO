@@ -1,0 +1,41 @@
+.slider {
+
+  &__item {
+    text-align: center;
+    max-width: rem(203);
+
+  }
+
+  &__link {
+    width: 100%;
+    text-align: center;
+
+    img {
+      height: rem(301);
+    }
+  }
+
+  @media screen and (width < 426.99px) {
+    &__item {
+      max-width: rem(162);
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  gap: rem(8);
+  padding-top: rem(15);
+
+  & button {
+    width: rem(24);
+    height: rem(2);
+    font-size: 0;
+    background-color: rgba(86, 86, 86, .2);
+    @include transition ($transition-property: background-color);
+  }
+}
+
+.slick-active button {
+  background-color: var(--main-color);
+}

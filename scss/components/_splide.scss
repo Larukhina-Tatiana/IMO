@@ -1,0 +1,33 @@
+.splide {
+
+  &__slide {
+    min-height: rem(341);
+  }
+
+  &__pagination {
+    gap: rem(8);
+    bottom: rem(-40);
+    right: auto;
+    padding: 0;
+
+    & button.is-active {
+      background-color: var(--main-color);
+      transform: none;
+    }
+  }
+
+  .splide__pagination__page {
+    @include transition ($transition-property: background-color);
+    width: rem(24);
+    height: rem(2);
+    font-size: 0;
+    background-color: rgba(86, 86, 86, .2);
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: relative;
+  }
+}

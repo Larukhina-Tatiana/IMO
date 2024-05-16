@@ -8,12 +8,21 @@
   @media screen and (width < 578px) {
     padding: 0 16px;
   }
-
-
-  // @media screen and (width > 1024px) {
-  //   max-width: 1200px;
-  // }
-  // @media screen and (width > 1440px) {
-  //   max-width: 1320px;
-  // }
 }
+
+@media screen and (width < 578px) {
+  .product-category.container {
+    padding: 0 rem(16) rem(80) 16px;
+  }
+}
+
+
+
+
+
+// @media screen and (width > 1024px) {
+//   max-width: 1200px;
+// }
+// @media screen and (width > 1440px) {
+//   max-width: 1320px;
+// }

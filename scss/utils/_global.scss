@@ -90,7 +90,7 @@ body {
     font-weight: 400;
     // font-size: rem(14);
     font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
-    // line-height: 1.6;
+    line-height: 1.6;
     color: var(--main-color);
     background-color: var(--white);
     overflow-x: hidden;
@@ -157,6 +157,11 @@ button,
 //   background-repeat: no-repeat;
 // }
 // }
+
+.section {
+    padding-bottom: rem(80);
+}
+
 .flex {
     display: flex;
     align-items: center;

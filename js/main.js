@@ -17,10 +17,12 @@ $(".nav__menu-btn").on("click", function () {
   $(".nav-main").toggleClass("menu--open");
 });
 
-if ($(window).width() < 1023.99) {
+if ($(window).width() < 1024.99) {
   $(".header__location").appendTo($(".header__menu-main-rightrow--mobile"));
 
   $(".nav-extra__list").appendTo($(".nav-main"));
+
+  $(".product-category__content").appendTo($(".product-category__box"));
 }
 
 var swiper = new Swiper(".swiper", {
@@ -65,31 +67,55 @@ $(".tabs__link").on("click", function (e) {
   $($(this).attr("href")).addClass("tabs__content--active");
 });
 
+var mySlider = new Splide(".splide", {
+  perPage: 4,
+  arrows: false,
+  // rewind: true,
+  gap: "20px",
+  breakpoints: {
+    1199: {
+      perPage: 3,
+      gap: "20px",
+      // height: "6rem",
+    },
+    684: {
+      perPage: 2,
+      gap: "20px",
+      // height: "6rem",
+    },
+    480: {
+      perPage: 1,
+      gap: ".7rem",
+      height: "6rem",
+    },
+  },
+});
+
+mySlider.mount();
+
 // $(function () {
-//   $(".hero__slider").slick({
+//   $(".slider__list").slick({
 //     dots: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     nextArrow:
-//       '<button type="button" class="slick-arrow slick-next"><img src="./images/icons/arrow-next-slider.svg" alt="next arrow"></button>',
-//     prevArrow:
-//       '<button type="button" class="slick-arrow slick-prev"><img src="./images/icons/arrow-prev-slider.svg" alt="prev arrow"></button>',
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     // infinite: true,
+//     // variableWidth: true,
 //     responsive: [
 //       {
-//         breakpoint: 1024.99,
+//         breakpoint: 895.99,
 //         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
+//           slidesToShow: 3,
 //         },
 //       },
-//       {
-//         breakpoint: 769,
-//         settings: {
-//           arrows: false,
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
+//       //   {
+//       //     breakpoint: 769,
+//       //     settings: {
+//       //       arrows: false,
+//       //       slidesToShow: 1,
+//       //       slidesToScroll: 1,
+//       //     },
+//       //   },
 //     ],
 //   });
 // });
