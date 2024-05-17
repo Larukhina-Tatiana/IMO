@@ -30,4 +30,12 @@
     padding: 0;
     position: relative;
   }
+
+  @media screen and (width < 684.99px) {
+    &__pagination {
+      left: 50%;
+      transform: translateX(-50%);
+      flex-wrap: nowrap;
+    }
+  }
 }

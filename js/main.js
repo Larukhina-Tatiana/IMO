@@ -67,6 +67,11 @@ $(".tabs__link").on("click", function (e) {
   $($(this).attr("href")).addClass("tabs__content--active");
 });
 
+// Иконка фаворит становиться залитой
+$(".card-product__favorite").on("click", function () {
+  $(this).toggleClass("card-product__favorite--active");
+});
+
 var mySlider = new Splide(".splide", {
   perPage: 4,
   arrows: false,
