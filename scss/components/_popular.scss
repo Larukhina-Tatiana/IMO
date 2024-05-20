@@ -1,0 +1,38 @@
+.popular {
+  &__content {
+    justify-content: space-between;
+    margin-bottom: rem(40);
+  }
+
+  & .splide__pagination {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  // @media screen and (width < 1199.99px) {
+  //   .splide1 {
+  //     // overflow: hidden;
+  //     width: rem(960);
+  //     margin: 0 auto;
+  //   }
+  // }
+
+  // @media screen and (width < 996.99px) {
+  //   .splide1 {
+  //     width: rem(630);
+  //     margin: 0 auto;
+  //   }
+  // }
+
+  // @media screen and (width < 480.99px) {
+  //   .splide1 {
+  //     width: rem(334);
+  //     margin: 0 auto;
+
+  //     .splide__slide {
+  //       width: rem(162) !important;
+  //       height: rem(369) !important;
+  //     }
+  //   }
+  // }
+}

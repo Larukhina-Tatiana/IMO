@@ -75,7 +75,6 @@ $(".card-product__favorite").on("click", function () {
 var mySlider = new Splide(".splide", {
   perPage: 4,
   arrows: false,
-  // rewind: true,
   gap: "20px",
   breakpoints: {
     1199: {
@@ -95,35 +94,65 @@ var mySlider = new Splide(".splide", {
     },
   },
 });
-
 mySlider.mount();
 
-// $(function () {
-//   $(".slider__list").slick({
-//     dots: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     // infinite: true,
-//     // variableWidth: true,
-//     responsive: [
-//       {
-//         breakpoint: 895.99,
-//         settings: {
-//           slidesToShow: 3,
-//         },
-//       },
-//       //   {
-//       //     breakpoint: 769,
-//       //     settings: {
-//       //       arrows: false,
-//       //       slidesToShow: 1,
-//       //       slidesToScroll: 1,
-//       //     },
-//       //   },
-//     ],
-//   });
+var mySlider1 = new Splide(".splide1", {
+  perPage: 4,
+  arrows: true,
+  gap: "30px",
+  breakpoints: {
+    1199: {
+      perPage: 3,
+      gap: "30px",
+    },
+    768: {
+      perPage: 2,
+      gap: "10px",
+    },
+    // 480: {
+    //   perPage: 1,
+    //   gap: ".7rem",
+    //   height: "6rem",
+    // },
+  },
+});
+mySlider1.mount();
+
+// const slider = document.querySelector(".card-product__list");
+
+// const mySiema = new Siema({
+//   selector: slider,
+//   loop: true,
+//   threshold: 100,
+//   duration: 1000,
+//   easing: "cubic-bezier(.17,.67,.32,1.34)",
 // });
+
+$(function () {
+  $(".card-product__list").slick({
+    fade: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    asNavFor: ".card-product__dots-list",
+    focusOnSelect: false,
+  });
+});
+
+$(function () {
+  $(".card-product__dots-list").slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    // centerMode: true,
+    arrows: false,
+    infinite: true,
+    asNavFor: ".card-product__list",
+    focusOnSelect: true,
+  });
+});
 
 // // $(function () {
 // // $(".reviews__slider").slick({

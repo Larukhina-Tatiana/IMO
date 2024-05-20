@@ -1,5 +1,9 @@
 .product-category {
 
+  &__title {
+    margin-bottom: rem(20);
+  }
+
   &__box {
     display: flex;
     gap: rem(50);

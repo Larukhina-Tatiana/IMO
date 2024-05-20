@@ -16,6 +16,41 @@
     }
   }
 
+  &__arrow {
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+    background: var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 1;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  .splide__arrow svg {
+    fill: white;
+    height: 20px;
+    width: 20px;
+  }
+
+
   .splide__pagination__page {
     @include transition ($transition-property: background-color);
     width: rem(24);
@@ -30,6 +65,8 @@
     padding: 0;
     position: relative;
   }
+
+
 
   @media screen and (width < 684.99px) {
     &__pagination {

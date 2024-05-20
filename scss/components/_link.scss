@@ -1,5 +1,27 @@
 .link {
+  font-weight: 600;
+  font-size: rem(14);
+  text-transform: uppercase;
+  line-height: 1;
+  @include transition ($transition-property: (scale));
 
+  &::after {
+    content: url(../images/icons/arrow-prev-slider.svg);
+    margin-left: rem(10);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  &__catalog {
+    color: var(--main-color);
+  }
+}
+
+.hero__link {
   width: rem(173);
   margin: 0 auto;
   border-radius: 50px;
@@ -8,13 +30,13 @@
   align-items: center;
   justify-content: center;
   gap: rem(10);
-
-  font-weight: 600;
-  font-size: rem(14);
-  text-transform: uppercase;
   color: var(--white);
   background: #404444;
   @include transition ($transition-property: (box-shadow, background-color, scale));
+
+  &::after {
+    display: none;
+  }
 
   @media (any-hover: hover) {
     &:hover {
