@@ -17,7 +17,7 @@
 
 
   &__image {
-    position: relative;
+    // position: relative;
 
     &--new::before {
       position: absolute;
@@ -33,14 +33,40 @@
       text-transform: capitalize;
       z-index: 4;
     }
+
+    &--sale::before {
+      position: absolute;
+      content: "-20";
+      padding: rem(5) rem(11);
+      font-weight: 600;
+      color: var(--white);
+      background-color: var(--red);
+      bottom: 0;
+      left: 0;
+      font-size: rem(14);
+      line-height: 1;
+      text-transform: capitalize;
+      z-index: 4;
+    }
   }
 
   &__image-cover {
+    position: relative;
     overflow: hidden;
+    width: rem(300);
+    height: rem(463);
+    object-fit: cover;
   }
 
   & img {
     @include transition ($transition-property: scale);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 16/9;
   }
 
 
