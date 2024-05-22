@@ -28,7 +28,6 @@
 
   &__content {
     max-width: rem(740);
-    // width: clamp(21.438rem, 11.459rem + 43.15vw, 46.25rem);
     margin-bottom: rem(40);
   }
 
@@ -48,7 +47,10 @@
     }
 
     &__content {
+      position: relative;
       order: -1;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 

@@ -53,7 +53,8 @@
   &__image-cover {
     position: relative;
     overflow: hidden;
-    width: rem(300);
+    // width: rem(300);
+    width: 100%;
     height: rem(463);
     object-fit: cover;
   }
@@ -174,6 +175,13 @@
   //     }
   //   }
   // }
+
+  @media screen and (width < 768.99px) {
+    &__image-cover {
+      width: clamp(10.125rem, 2.107rem + 34.67vw, 18.75rem);
+      height: clamp(16.125rem, 4.214rem + 51.51vw, 28.938rem);
+    }
+  }
 }
 
 

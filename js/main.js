@@ -56,50 +56,71 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-// // ! Tabs
-// $(".tabs__link").on("click", function (e) {
-//   e.preventDefault();
+// ! Tabs
+$(".tabs__link").on("click", function (e) {
+  e.preventDefault();
 
-//   $($(this).siblings()).removeClass("tabs__link--active");
+  $($(this).siblings()).removeClass("tabs__link--active");
 
-//   $($(this).closest(".tabs-wrapper").siblings().find("li")).removeClass(
-//     "tabs__content--active"
-//   );
+  $($(this).closest(".tabs-wrapper").siblings().find("li")).removeClass(
+    "tabs__content--active"
+  );
 
-//   $(this).addClass("tabs__link--active");
-//   $($(this).attr("href")).addClass("tabs__content--active");
-// });
+  $(this).addClass("tabs__link--active");
+  $($(this).attr("href")).addClass("tabs__content--active");
+});
 
-// // Иконка фаворит становиться залитой
-// $(".card-product__favorite").on("click", function () {
-//   $(this).toggleClass("card-product__favorite--active");
-// });
+// Иконка фаворит становиться залитой
+$(".card-product__favorite").on("click", function () {
+  $(this).toggleClass("card-product__favorite--active");
+});
 
-// var mySlider = new Splide(".splide", {
-//   perPage: 4,
-//   arrows: false,
-//   gap: "20px",
-//   breakpoints: {
-//     1199: {
-//       perPage: 3,
-//       gap: "20px",
-//       // height: "6rem",
-//     },
-//     684: {
-//       perPage: 2,
-//       gap: "20px",
-//       // height: "6rem",
-//     },
-//     480: {
-//       perPage: 1,
-//       gap: ".7rem",
-//       height: "6rem",
-//     },
-//   },
-// });
-// mySlider.mount();
+var mySlider = new Splide(".splide", {
+  perPage: 4,
+  arrows: false,
+  gap: "20px",
+  breakpoints: {
+    1199: {
+      perPage: 3,
+      gap: "20px",
+      // height: "6rem",
+    },
+    684: {
+      perPage: 2,
+      gap: "20px",
+      // height: "6rem",
+    },
+    480: {
+      perPage: 1,
+      gap: ".7rem",
+      height: "6rem",
+    },
+  },
+});
+mySlider.mount();
 
 var mySlider1 = new Splide(".splide1", {
+  perPage: 4,
+  arrows: true,
+  gap: "30px",
+  breakpoints: {
+    1199: {
+      perPage: 3,
+      gap: "20px",
+    },
+    768: {
+      perPage: 2,
+      gap: "10px",
+    },
+    // 480: {
+    //   perPage: 1,
+    //   gap: ".7rem",
+    //   height: "6rem",
+    // },
+  },
+});
+mySlider1.mount();
+var mySlider2 = new Splide(".splide2", {
   perPage: 4,
   arrows: true,
   gap: "30px",
@@ -119,7 +140,7 @@ var mySlider1 = new Splide(".splide1", {
     // },
   },
 });
-mySlider1.mount();
+mySlider2.mount();
 
 var swiperTvo = new Swiper(".current__slider-box", {
   slidesPerView: 1,
