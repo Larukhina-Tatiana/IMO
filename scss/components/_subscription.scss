@@ -1,0 +1,81 @@
+.subscription {
+  background-color: #FFC803;
+  padding: rem(66) 0;
+  margin-bottom: rem(80);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: rem(40);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--white);
+
+    @media screen and (width > 1288.99px) {
+      margin-right: rem(30);
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(30);
+
+  }
+
+  &__offer {
+    display: none;
+  }
+
+  @media screen and (width < 1288.99px) {
+
+    &__title {
+      text-align: center;
+    }
+
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      gap: rem(30);
+    }
+
+    &__box {
+      flex-direction: column;
+      gap: rem(30);
+      width: 100%;
+    }
+  }
+
+  @media screen and (width < 768.99px) {
+    &__offer {
+      display: block;
+      text-align: center;
+
+      padding: rem(38) rem(16);
+      background: #7002fe;
+      color: var(--white);
+
+      &-descr {
+        display: inline;
+        line-height: 1.3;
+      }
+
+      & a {
+        display: inline;
+        font-weight: 500;
+        text-decoration: underline;
+        color: inherit;
+        // text-decoration-skip-ink: none;
+      }
+
+    }
+
+
+  }
+
+}

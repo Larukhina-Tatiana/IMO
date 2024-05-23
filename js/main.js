@@ -164,6 +164,10 @@ var swiperTvo = new Swiper(".current__slider-box", {
   },
 });
 
+if ($(window).width() < 768.99) {
+  $(".social-icons").appendTo($(".subscription__offer"));
+}
+
 // const slider = document.querySelector(".current__slider");
 // const next = document.querySelector(".next");
 // const prev = document.querySelector(".prev");

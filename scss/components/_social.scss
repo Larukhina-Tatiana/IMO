@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20);
+
+  &__link {
+    @include transition ($transition-property: scale);
+
+    @media (any-hover: hover) {
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+
+  &__link--vk::before {
+    content: url(../images/icons/vk.svg);
+  }
+
+  &__link--instagram::before {
+    content: url(../images/icons/instagram.svg);
+  }
+
+  &__link--youtube::before {
+    content: url(../images/icons/youtube.svg);
+  }
+
+  @media screen and (width < 768.99px) {
+    justify-content: center;
+    margin-top: rem(30);
+  }
+}
