@@ -1,0 +1,74 @@
+.fashion-news {
+  &.section {
+    padding-bottom: rem(60);
+  }
+
+  &__title {
+    margin-bottom: rem(40);
+  }
+
+  &__list {
+    padding-bottom: rem(40);
+  }
+
+  & .card-product__image-cover {
+    height: rem(508);
+  }
+
+  &__image {
+    margin-bottom: rem(20);
+  }
+
+  &__text {
+    font-size: clamp(1rem, 0.898rem + 0.44vw, 1.25rem);
+    line-height: 1;
+    color: var(--main-color);
+  }
+
+  & .swiper-pag {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+
+  & .swiper-pagination-bullet {
+    background-color: var(--main-color);
+    width: 1.5rem;
+    height: 0.125rem;
+  }
+
+  & .splide__pagination__page.is-active {
+    background: red;
+    transform: scale(1.4);
+    z-index: 1;
+  }
+
+
+  .swiper {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    // grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(343px, 410px));
+    // justify-content: center;
+    // justify-items: center;
+    gap: 30px;
+
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 1289px) {
+    .slider-1 .swiper-wrapper {
+      display: flex;
+      gap: 0;
+    }
+  }
+}

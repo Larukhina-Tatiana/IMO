@@ -1519,7 +1519,7 @@
                   <button class="card-product__favorite"></button>
                   <ul class="card-product__list">
                     <li class="">
-                      <div class="card-product__image-cover ">
+                      <div class="card-product__image-cover">
                         <picture class="card-product__image card-product__image--new">
                           <source type="image/avif" srcset="
                             ./images/card/image1@1x.avif 1x,
@@ -1963,7 +1963,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image card-product__image--sale">
                       <source type="image/avif" srcset="
                             ./images/card/image1@1x.avif 1x,
@@ -1990,7 +1990,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image card-product__image--sale">
                       <source type="image/avif" srcset="
                             ./images/card/image4@1x.avif 1x,
@@ -2017,7 +2017,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image">
                       <source type="image/avif" srcset="
                             ./images/product-category/images5@1x.avif 1x,
@@ -2071,7 +2071,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image card-product__image--sale">
                       <source type="image/avif" srcset="
                             ./images/card/image1@1x.avif 1x,
@@ -2098,7 +2098,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image card-product__image--sale">
                       <source type="image/avif" srcset="
                             ./images/card/image4@1x.avif 1x,
@@ -2125,7 +2125,7 @@
               <li class="splide__slide">
                 <article class="card-product">
                   <button class="card-product__favorite"></button>
-                  <div class="card-product__image-cover ">
+                  <div class="card-product__image-cover">
                     <picture class="card-product__image">
                       <source type="image/avif" srcset="
                             ./images/product-category/images5@1x.avif 1x,
@@ -2284,7 +2284,6 @@
                   </a>
                 </article>
               </li>
-
             </ul>
           </div>
 
@@ -2294,32 +2293,34 @@
     </section>
 
     <section class="subscription section">
-      <div class="container">
-        <div class="subscription__inner">
-          <h3 class="subscription__title">Скидка 10% на подписку</h3>
-          <div class="subscription__box">
-            <form class="subscription__form form" action="#" name="subscription-mail" novalidate="">
-              <label class="form__label" for="user-email"></label>
-              <input class="form__input" type="email" name="email" id="user-email" placeholder="Ваш E-mail" required="">
-              <button class="form__button" type="submit">Подписаться</button>
-            </form>
+      <div class="subscription__bg">
+        <div class="container">
+          <div class="subscription__inner">
+            <h3 class="subscription__title">Скидка 10% на подписку</h3>
+            <div class="subscription__box">
+              <form class="subscription__form form" action="#" name="subscription-mail" novalidate="">
+                <label class="form__label" for="user-email"></label>
+                <input class="form__input" type="email" name="email" id="user-email" placeholder="Ваш E-mail"
+                  required="">
+                <button class="form__button" type="submit">Подписаться</button>
+              </form>
 
-            <address class="social-icons">
-              <ul class="social">
-                <li class="social__item">
-                  <a class="social__link social__link--vk" href=""></a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--instagram" href=""></a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--youtube" href=""></a>
-                </li>
-              </ul>
-            </address>
+              <address class="social-icons">
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link social__link--vk" href=""></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--instagram" href=""></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--youtube" href=""></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
           </div>
         </div>
-
       </div>
       <div class="subscription__offer">
         <p class="subscription__offer-descr">
@@ -2331,6 +2332,104 @@
           чтобы не пропустить свежие новости и посты о наших магазинах, а также о приглашениях, распрадажах и
           мероприятиях.
         </p>
+      </div>
+    </section>
+
+    <section class="fashion-news container section">
+      <h2 class="fashion-news__title section__title">Модные новости</h2>
+
+      <div class="swiper slider-1">
+        <ul class="fashion-news__list swiper-wrapper grid">
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="card-product__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image1@1x.avif 1x,
+                  ./images/fashion-news/image1@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image1@1x.webp 1x,
+                  ./images/fashion-news/image1@2x.webp 2x">
+                  <img class="fashion-news__image card-product__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image1@1x.jpg 1x,
+                  ./images/fashion-news/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="card-product__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image2@1x.avif 1x,
+                  ./images/fashion-news/image122x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image2@1x.webp 1x,
+                  ./images/fashion-news/image2@2x.webp 2x">
+                  <img class="fashion-news__image card-product__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image2@1x.jpg 1x,
+                  ./images/fashion-news/image2@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="card-product__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image3@1x.avif 1x,
+                  ./images/fashion-news/image3@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image3@1x.webp 1x,
+                  ./images/fashion-news/image3@2x.webp 2x">
+                  <img class="fashion-news__image card-product__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image3@1x.jpg 1x,
+                  ./images/fashion-news/image3@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="card-product__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/card/image1@1x.avif 1x,card
+                  ./images/card/image1@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/card/image1@1x.webp 1x,
+                  ./images/card/image1@2x.webp 2x">
+                  <img class="fashion-news__image card-product__image" src="image/jpg" srcset="
+                  ./images/card/image1@1x.jpg 1x,
+                  ./images/card/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+
+        </ul>
+        <div class="swiper__control">
+          <button class="swiper-next">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="стрелка назад" width="25" height="8" fill="none">
+              <path fill="#565656"
+                d="M.646 3.646a.5.5 0 0 0 0 .708l3.182 3.182a.5.5 0 1 0 .708-.708L1.707 4l2.829-2.828a.5.5 0 1 0-.708-.708L.646 3.646ZM25 3.5H1v1h24v-1Z" />
+            </svg>
+
+          </button>
+          <div class="swiper-pag"></div>
+          <button class="swiper-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="стрелка вперёд" width="25" height="8" fill="none">
+              <path fill="#565656"
+                d="M24.354 4.354a.5.5 0 0 0 0-.708L21.172.464a.5.5 0 1 0-.707.708L23.293 4l-2.828 2.828a.5.5 0 1 0 .707.708l3.182-3.182ZM0 4.5h24v-1H0v1Z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -2376,6 +2475,7 @@
 
   <!-- <script src="js/svgfixer.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
+  <script src="js/app.js"></script>
   <script src="js/main.js"></script>
 </body>
 

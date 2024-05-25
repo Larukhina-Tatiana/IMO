@@ -59,9 +59,6 @@
   }
 
   @media screen and (width < 1024.99px) {
-    &.container {
-      padding: 0 rem(15) rem(80) 0;
-    }
 
     &__inner {
       flex-direction: column-reverse;

@@ -6,15 +6,12 @@
   width: 100%;
 
   @media screen and (width < 578px) {
-    padding: 0 16px;
+    padding-right: rem(16);
+    padding-left: rem(16);
   }
 }
 
-@media screen and (width < 578px) {
-  .product-category.container {
-    padding: 0 rem(16) rem(80) 16px;
-  }
-}
+
 
 
 

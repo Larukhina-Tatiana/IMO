@@ -1,7 +1,9 @@
 .subscription {
-  background-color: #FFC803;
-  padding: rem(66) 0;
-  margin-bottom: rem(80);
+
+  &__bg {
+    padding: rem(66) 0;
+    background-color: #FFC803;
+  }
 
   &__inner {
     display: flex;
@@ -16,7 +18,7 @@
     line-height: 1;
     color: var(--white);
 
-    @media screen and (width > 1288.99px) {
+    @media screen and (width > 1289.99px) {
       margin-right: rem(30);
     }
   }
@@ -24,8 +26,7 @@
   &__box {
     display: flex;
     align-items: center;
-    margin-bottom: rem(30);
-
+    gap: rem(30);
   }
 
   &__offer {
@@ -46,8 +47,8 @@
 
     &__box {
       flex-direction: column;
-      gap: rem(30);
       width: 100%;
+      margin-bottom: rem(30);
     }
   }
 

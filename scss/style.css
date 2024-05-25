@@ -141,15 +141,11 @@ button,
 }
 @media screen and (width < 578px) {
   .container {
-    padding: 0 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
-@media screen and (width < 578px) {
-  .product-category.container {
-    padding: 0 1rem 5rem 16px;
-  }
-}
 html,
 body {
   height: 100%;
@@ -1151,7 +1147,6 @@ body {
 }
 @media screen and (width < 768.99px) {
   .card-product__image-cover {
-    width: clamp(10.125rem, 2.107rem + 34.67vw, 18.75rem);
     height: clamp(16.125rem, 4.214rem + 51.51vw, 28.938rem);
   }
 }
@@ -1229,9 +1224,6 @@ body {
   aspect-ratio: 16/9;
 }
 @media screen and (width < 1024.99px) {
-  .current.container {
-    padding: 0 0.9375rem 5rem 0;
-  }
   .current__inner {
     flex-direction: column-reverse;
   }
@@ -1254,10 +1246,9 @@ body {
   }
 }
 
-.subscription {
-  background-color: #FFC803;
+.subscription__bg {
   padding: 4.125rem 0;
-  margin-bottom: 5rem;
+  background-color: #FFC803;
 }
 .subscription__inner {
   display: flex;
@@ -1271,7 +1262,7 @@ body {
   line-height: 1;
   color: var(--white);
 }
-@media screen and (width > 1288.99px) {
+@media screen and (width > 1289.99px) {
   .subscription__title {
     margin-right: 1.875rem;
   }
@@ -1279,7 +1270,7 @@ body {
 .subscription__box {
   display: flex;
   align-items: center;
-  margin-bottom: 1.875rem;
+  gap: 1.875rem;
 }
 .subscription__offer {
   display: none;
@@ -1295,8 +1286,8 @@ body {
   }
   .subscription__box {
     flex-direction: column;
-    gap: 1.875rem;
     width: 100%;
+    margin-bottom: 1.875rem;
   }
 }
 @media screen and (width < 768.99px) {
@@ -1353,10 +1344,11 @@ body {
 .form {
   display: flex;
   align-items: center;
-  margin-right: 1.875rem;
+  max-width: 34.375rem;
+  width: 100%;
 }
 .form__input {
-  max-width: 22.125rem;
+  width: 22.125rem;
   height: 3.125rem;
   line-height: 1;
   color: var(--main-color);
@@ -1371,7 +1363,7 @@ body {
   border: 1px solid var(--black);
 }
 .form__button {
-  max-width: 12.25rem;
+  width: 12.25rem;
   height: 3.125rem;
   font-weight: 600;
   line-height: 1;
@@ -1388,11 +1380,67 @@ body {
     width: 100%;
   }
   .form__input {
-    width: 100%;
+    width: 21.4375rem;
     border-radius: 3.125rem;
   }
   .form__button {
+    max-width: 21.4375rem;
     width: 100%;
     border-radius: 3.125rem;
+  }
+}
+
+.fashion-news.section {
+  padding-bottom: 3.75rem;
+}
+.fashion-news__title {
+  margin-bottom: 2.5rem;
+}
+.fashion-news__list {
+  padding-bottom: 2.5rem;
+}
+.fashion-news .card-product__image-cover {
+  height: 31.75rem;
+}
+.fashion-news__image {
+  margin-bottom: 1.25rem;
+}
+.fashion-news__text {
+  font-size: clamp(1rem, 0.898rem + 0.44vw, 1.25rem);
+  line-height: 1;
+  color: var(--main-color);
+}
+.fashion-news .swiper-pag {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+.fashion-news .swiper-pagination-bullet {
+  background-color: var(--main-color);
+  width: 1.5rem;
+  height: 0.125rem;
+}
+.fashion-news .splide__pagination__page.is-active {
+  background: red;
+  transform: scale(1.4);
+  z-index: 1;
+}
+.fashion-news .swiper {
+  width: 100%;
+}
+.fashion-news .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.fashion-news .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1289px) {
+  .fashion-news .slider-1 .swiper-wrapper {
+    display: flex;
+    gap: 0;
   }
 }/*# sourceMappingURL=style.css.map */
