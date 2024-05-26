@@ -59,7 +59,8 @@
     object-fit: cover;
   }
 
-  & img {
+
+  &__image {
     @include transition ($transition-property: scale);
     position: absolute;
     width: 100%;

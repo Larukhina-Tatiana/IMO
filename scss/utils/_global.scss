@@ -18,11 +18,6 @@ body {
     @return $result;
 }
 
-// EM
-@function em($px) {
-    $result: math.div($px, 16) + em;
-    @return $result;
-}
 
 // TO %
 @function prc($pxOne, $pxTwo) {
@@ -62,6 +57,7 @@ select {
 a {
     display: block;
     text-decoration: none;
+    color: inherit;
 }
 
 body,
@@ -82,7 +78,7 @@ dl,
 dd {
     margin: 0;
     padding: 0;
-    // font-size: inherit;
+    font-size: inherit;
 }
 
 body {

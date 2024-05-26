@@ -11,18 +11,47 @@
     padding-bottom: rem(40);
   }
 
-  & .card-product__image-cover {
-    height: rem(508);
+  &__link {
+    max-width: rem(410);
+    margin: 0 auto;
   }
 
+  &__image-cover {
+    position: relative;
+    overflow: hidden;
+    max-width: rem(410);
+    // width: 100%;
+    // padding-top: 56.25%;
+    aspect-ratio: 1/1;
+    height: rem(508);
+    // object-fit: cover;
+  }
+
+
   &__image {
-    margin-bottom: rem(20);
+    @include transition ($transition-property: scale);
+    position: absolute;
+    // left: 0;
+    // top: 0;
+    width: 100%;
+    height: auto;
+
+    // width: 100%;
+    // height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__text {
     font-size: clamp(1rem, 0.898rem + 0.44vw, 1.25rem);
     line-height: 1;
     color: var(--main-color);
+    margin-top: rem(20);
+  }
+
+  & .swiper__control {
+    display: none;
   }
 
   & .swiper-pag {
@@ -61,14 +90,29 @@
   }
 
   .swiper-slide {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    // gap: rem(10);
+    margin: 0 auto;
   }
 
-  @media (max-width: 1289px) {
+  @media (max-width: 1250px) {
     .slider-1 .swiper-wrapper {
       display: flex;
       gap: 0;
     }
+
+    .swiper__control {
+      display: flex;
+    }
+  }
+
+  @media screen and (width < 485.99px) {
+    &__image-cover {
+      width: rem(343);
+      width: 100%;
+    }
+
+    // width: clamp(21.438rem, 19.753rem + 7.28vw, 25.625rem);
   }
 }

@@ -29,6 +29,12 @@
 
   &__title {
     font-weight: 600;
+    pointer-events: none;
+    @include transition ($transition-property: all);
+
+    &-drop {
+      display: none;
+    }
   }
 
   &__item {
@@ -61,8 +67,43 @@
     justify-content: center;
 
     &-link {
-      // color: var(--main-color);
-      color: inherit;
+      // // color: var(--main-color);
+      // color: inherit;
+    }
+  }
+
+  @media screen and (width < 600.99px) {
+
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    &__title {
+      pointer-events: all;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &-drop {
+        display: block;
+        margin-left: rem(5);
+        transition: transform .3s ease-in;
+      }
+
+
+      &.title--active {
+        .footer__title-drop {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__copyright {
+      flex-direction: column;
     }
   }
 }

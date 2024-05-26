@@ -39,11 +39,11 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   resizableSwiper(
-    "(width <= 1289px)",
+    "(width <= 1250px)",
     ".slider-1",
     {
       loop: true,
-      // spaceBetween: 30,
+      // spaceBetween: 20,
       // slidesPerView: 2,
       // pagination: {
       //   el: ".swiper-pag",
@@ -54,13 +54,13 @@ window.addEventListener("DOMContentLoaded", () => {
         prevEl: ".swiper-prev",
       },
       breakpoints: {
-        580: {
+        820: {
           slidesPerView: 2,
           spaceBetween: 30,
         },
-        485: {
+        810: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 50,
         },
       },
     },
