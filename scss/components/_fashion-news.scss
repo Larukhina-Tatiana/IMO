@@ -83,7 +83,6 @@
   }
 
   .swiper-slide {
-
     margin: 0 auto;
   }
 
@@ -95,6 +94,7 @@
 
     .swiper__control {
       display: flex;
+      bottom: 0;
     }
   }
 

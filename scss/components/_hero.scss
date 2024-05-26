@@ -45,14 +45,15 @@
 
   &__slider-images-thumb {
     position: relative;
-    width: rem(430);
+    // width: rem(430);
+    width: 100%;
     height: clamp(26.125rem, 20.394rem + 24.78vw, 40.375rem);
     overflow: hidden;
-    object-fit: cover;
   }
 
   &__slider-img {
     position: absolute;
+    object-fit: cover;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -60,7 +61,8 @@
 
   @media screen and (width < 578px) {
     &.container {
-      padding: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__slider-img {

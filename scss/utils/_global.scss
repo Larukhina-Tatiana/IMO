@@ -155,7 +155,7 @@ button,
 // }
 
 .section {
-    padding-bottom: rem(80);
+    padding-bottom: clamp(2.5rem, 1.495rem + 4.35vw, 5rem);
 }
 
 .flex {

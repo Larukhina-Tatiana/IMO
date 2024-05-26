@@ -97,7 +97,7 @@ button,
 }
 
 .section {
-  padding-bottom: 5rem;
+  padding-bottom: clamp(2.5rem, 1.495rem + 4.35vw, 5rem);
 }
 
 .flex {
@@ -669,21 +669,22 @@ body {
 }
 .hero__slider-images-thumb {
   position: relative;
-  width: 26.875rem;
+  width: 100%;
   height: clamp(26.125rem, 20.394rem + 24.78vw, 40.375rem);
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .hero__slider-img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 @media screen and (width < 578px) {
   .hero.container {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .hero__slider-img {
     aspect-ratio: 3/4;
@@ -923,12 +924,15 @@ body {
   margin-top: 1.25rem;
 }
 
+.splide {
+  padding-bottom: 2rem;
+}
 .splide__slide {
   min-height: 21.3125rem;
 }
 .splide__pagination {
   gap: 0.5rem;
-  bottom: -2.5rem;
+  bottom: 0;
   right: auto;
   padding: 0;
 }
@@ -1249,7 +1253,7 @@ body {
 }
 
 .subscription__bg {
-  padding: 4.125rem 0;
+  padding: clamp(2.813rem, 2.285rem + 2.28vw, 4.125rem) 0;
   background-color: #FFC803;
 }
 .subscription__inner {
@@ -1470,11 +1474,12 @@ body {
   }
   .fashion-news .swiper__control {
     display: flex;
+    bottom: 0;
   }
 }
 
 .footer {
-  padding-top: clamp(3.125rem, 2.371rem + 3.26vw, 5rem);
+  padding-top: clamp(3.75rem, 3.238rem + 2.19vw, 5rem);
   padding-bottom: 1.5rem;
   background-color: #f6f6f6;
   text-align: center;
