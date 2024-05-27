@@ -1254,7 +1254,6 @@ body {
 
 .subscription__bg {
   padding: clamp(2.813rem, 2.285rem + 2.28vw, 4.125rem) 0;
-  background-color: #FFC803;
 }
 .subscription__inner {
   display: flex;
@@ -1414,7 +1413,6 @@ body {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1/1;
-  height: 31.75rem;
 }
 .fashion-news__image {
   transition-duration: 550ms;
