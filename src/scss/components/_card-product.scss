@@ -1,52 +1,24 @@
 .card-product {
   position: relative;
   max-width: rem(300);
+  min-height: 603px;
   margin: 0 auto;
   text-align: left;
-  @include transition ($transition-property: (box-shadow, scale));
+  // padding-bottom: 10px;
+  // outline: 1px solid red;
+  // @include transition ($transition-property: (box-shadow));
 
   @media (any-hover: hover) {
     &:hover {
-      img {
+      .card-product__image {
         scale: 1.2;
       }
 
+      .card-product__image--new::before {
+        left: 50px;
+      }
+
       // box-shadow: 1px 5px 10px -5px black;
-    }
-  }
-
-
-  &__image {
-    // position: relative;
-
-    &--new::before {
-      position: absolute;
-      content: "new";
-      padding: rem(5) rem(11);
-      font-weight: 600;
-      color: var(--white);
-      background-color: var(--green);
-      bottom: 0;
-      left: 0;
-      font-size: rem(14);
-      line-height: 1;
-      text-transform: capitalize;
-      z-index: 4;
-    }
-
-    &--sale::before {
-      position: absolute;
-      content: "-20";
-      padding: rem(5) rem(11);
-      font-weight: 600;
-      color: var(--white);
-      background-color: var(--red);
-      bottom: 0;
-      left: 0;
-      font-size: rem(14);
-      line-height: 1;
-      text-transform: capitalize;
-      z-index: 4;
     }
   }
 
@@ -69,6 +41,41 @@
     left: 50%;
     transform: translate(-50%, -50%);
     aspect-ratio: 16/9;
+
+    &--new::before {
+      position: absolute;
+      content: "new";
+      padding: rem(5) rem(11);
+      font-weight: 600;
+      color: var(--white);
+      background-color: var(--green);
+      bottom: 0;
+      left: 0;
+      font-size: rem(14);
+      line-height: 1;
+      text-transform: capitalize;
+      z-index: 4;
+      @include transition ($transition-property: (left, scale));
+    }
+
+
+  }
+
+  &__discont {
+    ::before {
+      position: absolute;
+      content: "-20";
+      padding: rem(5) rem(11);
+      font-weight: 600;
+      color: var(--white);
+      background-color: var(--red);
+      bottom: 0;
+      left: 0;
+      font-size: rem(14);
+      line-height: 1;
+      text-transform: capitalize;
+      z-index: 4;
+    }
   }
 
 

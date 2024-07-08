@@ -1,9 +1,9 @@
 .splide {
-  padding-bottom: rem(32);
+  padding-bottom: 25px;
 
-  &__slide {
-    min-height: rem(341);
-  }
+  // &__slide {
+  //   min-height: rem(341);
+  // }
 
   &__pagination {
     gap: rem(8);
@@ -19,8 +19,8 @@
 
   &__arrow {
     position: absolute;
-    width: rem(40);
-    height: rem(40);
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     cursor: pointer;
     opacity: 1;
     padding: 0;
-    top: 50%;
+    top: 37%;
     transform: translateY(-50%);
     z-index: 1;
 
