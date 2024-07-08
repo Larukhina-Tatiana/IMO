@@ -1,0 +1,20 @@
+.catalog {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: rem(30);
+    grid-column: 4 span;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (width < 661.99px) {
+    &__list {
+      grid-template-columns: repeat(2, 162px);
+      grid-template-rows: repeat(2, 380px);
+    }
+  }
+
+}

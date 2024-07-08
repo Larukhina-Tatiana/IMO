@@ -1,12 +1,23 @@
+@import "./modern-normalize.min";
+@import "././libs/swiper/swiper-bundle.min";
+@import "././libs/slick/slick";
+@import "././libs/splide/splide.min";
+
+
+
+
+
+
 @import "./utils/_global";
 @import "./utils/_vars";
-// @import "./utils/fonts";
+@import "./utils/fonts";
 @import "./utils/_container";
 @import "./utils/_wrapper";
 @import "./components/_header";
 @import "./components/_search";
 @import "./components/_logo";
 @import "./components/_nav";
+@import "./components/images";
 @import "./components/arrows";
 @import "./components/_favorite";
 @import "./components/additional";
@@ -27,6 +38,9 @@
 @import "./components/_form";
 @import "./components/_fashion-news";
 @import "./components/_footer";
+
+
+@import "./components/_catalog";
 
 // @import "./components/swiper-pagination-bullet";
 // @import "./components/_advantages";

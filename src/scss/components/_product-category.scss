@@ -1,20 +1,20 @@
 .product-category {
 
   &__title {
-    margin-bottom: rem(20);
+    margin-bottom: 20px;
   }
 
   &__box {
     display: flex;
-    gap: rem(50);
+    gap: 50px;
     // min-width: 0;
   }
 
   &__thumb {
     position: relative;
-    max-width: rem(361);
+    max-width: 361px;
     width: 100%;
-    height: rem(548);
+    height: 548px;
     overflow: hidden;
   }
 
@@ -27,15 +27,15 @@
   }
 
   &__content {
-    max-width: rem(740);
-    margin-bottom: rem(40);
+    max-width: 740px;
+    margin-bottom: 40px;
   }
 
   &__slider {
-    max-width: rem(879);
+    max-width: 879px;
     // width: 100%;
     margin: 0 auto;
-    // padding: 0 rem(10);
+    // padding: 0 10px;
   }
 
 
@@ -56,20 +56,20 @@
 
   @media screen and (width < 895.99px) {
     &__slider {
-      max-width: rem(668);
+      max-width: 668px;
       width: 100%;
     }
   }
 
   @media screen and (width < 684.99px) {
     &__slider {
-      max-width: rem(426);
+      max-width: 426px;
     }
   }
 
   @media screen and (width < 426.99px) {
     &__slider {
-      max-width: rem(344);
+      max-width: 344px;
     }
   }
 

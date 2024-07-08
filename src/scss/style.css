@@ -1562,4 +1562,20 @@ body {
   .footer__copyright {
     flex-direction: column;
   }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 1.875rem;
+  grid-column: 4 span;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+@media screen and (width < 661.99px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 162px);
+    grid-template-rows: repeat(2, 380px);
+  }
 }/*# sourceMappingURL=style.css.map */

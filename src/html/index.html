@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин Одежда</title>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"> -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- @include('header.html') -->
+
+  <main>
+    @include('hero.html')
+    @include('tabs.html')
+    @include('product-category.html')
+    @include('popular.html')
+    @include('current.html')
+
+
+
+
+    <!-- <section class="popular container section">
+      <div class="popular__inner">
+        <div class="popular__content flex">
+          <h2 class="popular__title section__title">Скидочные товары</h2>
+          <a class="popular__link link__catalog link" href="">В каталог</a>
+        </div>
+
+        <div class="splide2 splide" aria-label="Basic Structure Example">
+          <div class="splide__track">
+            <ul class="popular__slider slider__list splide__list">
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image1@1x.avif 1x,
+                            ./images/card/image1@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image1@1x.webp 1x,
+                            ./images/card/image1@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image1@1x.jpg 1x,
+                            ./images/card/image1@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image4@1x.avif 1x,
+                            ./images/card/image4@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image4@1x.webp 1x,
+                            ./images/card/image4@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image4@1x.jpg 1x,
+                            ./images/card/image4@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image">
+                      <source type="image/avif" srcset="
+                            ./images/product-category/images5@1x.avif 1x,
+                            ./images/product-category/images5@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/product-category/images5@1x.webp 1x,
+                            ./images/product-category/images5@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/product-category/images5@1x.jpg 1x,
+                            ./images/product-category/images5@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image2@1x.avif 1x,
+                            ./images/card/image2@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image2@1x.webp 1x,
+                            ./images/card/image2@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image2@1x.jpg 1x,
+                            ./images/card/image2@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image1@1x.avif 1x,
+                            ./images/card/image1@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image1@1x.webp 1x,
+                            ./images/card/image1@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image1@1x.jpg 1x,
+                            ./images/card/image1@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image4@1x.avif 1x,
+                            ./images/card/image4@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image4@1x.webp 1x,
+                            ./images/card/image4@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image4@1x.jpg 1x,
+                            ./images/card/image4@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover">
+                    <picture class="card-product__image">
+                      <source type="image/avif" srcset="
+                            ./images/product-category/images5@1x.avif 1x,
+                            ./images/product-category/images5@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/product-category/images5@1x.webp 1x,
+                            ./images/product-category/images5@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/product-category/images5@1x.jpg 1x,
+                            ./images/product-category/images5@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image3@1x.avif 1x,
+                            ./images/card/image3@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image3@1x.webp 1x,
+                            ./images/card/image3@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image3@1x.jpg 1x,
+                            ./images/card/image3@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image1@1x.avif 1x,
+                            ./images/card/image1@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image1@1x.webp 1x,
+                            ./images/card/image1@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image1@1x.jpg 1x,
+                            ./images/card/image1@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image4@1x.avif 1x,
+                            ./images/card/image4@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image4@1x.webp 1x,
+                            ./images/card/image4@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image4@1x.jpg 1x,
+                            ./images/card/image4@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image">
+                      <source type="image/avif" srcset="
+                            ./images/product-category/images2@1x.avif 1x,
+                            ./images/product-category/images2@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/product-category/images2@1x.webp 1x,
+                            ./images/product-category/images2@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/product-category/images2@1x.jpg 1x,
+                            ./images/product-category/images2@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card-product">
+                  <button class="card-product__favorite"></button>
+                  <div class="card-product__image-cover ">
+                    <picture class="card-product__image card-product__image--sale">
+                      <source type="image/avif" srcset="
+                            ./images/card/image2@1x.avif 1x,
+                            ./images/card/image2@2x.avif 2x">
+                      <source type="image/webp" srcset="
+                            ./images/card/image2@1x.webp 1x,
+                            ./images/card/image2@2x.webp 2x">
+                      <img src="image/jpg" srcset="
+                            ./images/card/image2@1x.jpg 1x,
+                            ./images/card/image2@2x.jpg 2x" loading="lazy" decoding="async"
+                        alt="Зип худи шерпа с капюшоном (белый)">
+                    </picture>
+                  </div>
+                  <div class="card-product__price-box">
+                    <p class="card-product__price">789.99 ₴</p>
+                    <button class="card-product__basket"></button>
+                  </div>
+                  <a class="card-product__link" href="">
+                    <p class="card-product__name" lang="en">Stone Island</p>
+                    <h4 class="card-product__title">Зип худи шерпа с капюшоном (белый)</h4>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="subscription section" <div class="subscription__bg" style="background-color: #FFC803;">
+      <div class="subscription__bg">
+        <div class="container">
+          <div class="subscription__inner">
+            <h3 class="subscription__title">Скидка 10% на подписку</h3>
+            <div class="subscription__box">
+              <form class="subscription__form form" action="#" name="subscription-mail" novalidate="">
+                <label class="form__label" for="user-email"></label>
+                <input class="form__input" type="email" name="email" id="user-email" placeholder="Ваш E-mail"
+                  required="">
+                <button class="form__button" type="submit">Подписаться</button>
+              </form>
+
+              <address class="social-icons">
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link social__link--vk" href=""></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--instagram" href=""></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--youtube" href=""></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscription__offer">
+        <p class="subscription__offer-descr">
+          Подпишись на Street Beat в</p>
+        <a href="">VKontakte, </a>
+        <a href="">Telegram, </a>
+        <a href="">YouTobe, </a>
+        <p class="subscription__offer-descr">
+          чтобы не пропустить свежие новости и посты о наших магазинах, а также о приглашениях, распрадажах и
+          мероприятиях.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- <section class="fashion-news container section">
+      <h2 class="fashion-news__title section__title">Модные новости</h2>
+
+      <div class="swiper slider-1">
+        <ul class="fashion-news__list swiper-wrapper grid">
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="fashion-news__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image1@1x.avif 1x,
+                  ./images/fashion-news/image1@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image1@1x.webp 1x,
+                  ./images/fashion-news/image1@2x.webp 2x">
+                  <img class="fashion-news__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image1@1x.jpg 1x,
+                  ./images/fashion-news/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="fashion-news__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image2@1x.avif 1x,
+                  ./images/fashion-news/image122x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image2@1x.webp 1x,
+                  ./images/fashion-news/image2@2x.webp 2x">
+                  <img class="fashion-news__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image2@1x.jpg 1x,
+                  ./images/fashion-news/image2@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="fashion-news__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/fashion-news/image3@1x.avif 1x,
+                  ./images/fashion-news/image3@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/fashion-news/image3@1x.webp 1x,
+                  ./images/fashion-news/image3@2x.webp 2x">
+                  <img class="fashion-news__image" src="image/jpg" srcset="
+                  ./images/fashion-news/image3@1x.jpg 1x,
+                  ./images/fashion-news/image3@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+          <li class="fashion-news__item swiper-slide">
+            <a href="#" class="fashion-news__link">
+              <div class="fashion-news__image-cover">
+                <picture>
+                  <source type="image/avif" srcset="
+                  ./images/card/image1@1x.avif 1x,
+                  ./images/card/image1@2x.avif 2x">
+                  <source type="image/webp" srcset="
+                  ./images/card/image1@1x.webp 1x,
+                  ./images/card/image1@2x.webp 2x">
+                  <img class="fashion-news__image" src="image/jpg" srcset="
+                  ./images/card/image1@1x.jpg 1x,
+                  ./images/card/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+                </picture>
+              </div>
+              <p class="fashion-news__text"><strong>Совершайте покупки,</strong><br>Которые сделают мир лучше.</p>
+            </a>
+          </li>
+
+        </ul>
+        <div class="swiper__control">
+          <button class="swiper-next">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="стрелка назад" width="25" height="8" fill="none">
+              <path fill="#565656"
+                d="M.646 3.646a.5.5 0 0 0 0 .708l3.182 3.182a.5.5 0 1 0 .708-.708L1.707 4l2.829-2.828a.5.5 0 1 0-.708-.708L.646 3.646ZM25 3.5H1v1h24v-1Z" />
+            </svg>
+
+          </button>
+          <div class="swiper-pag"></div>
+          <button class="swiper-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="стрелка вперёд" width="25" height="8" fill="none">
+              <path fill="#565656"
+                d="M24.354 4.354a.5.5 0 0 0 0-.708L21.172.464a.5.5 0 1 0-.707.708L23.293 4l-2.828 2.828a.5.5 0 1 0 .707.708l3.182-3.182ZM0 4.5h24v-1H0v1Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <nav class="footer__info">
+          <h5 class="footer__title">Помощь
+            <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть"
+              width="8" height="6">
+          </h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">Мой аккаунт</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Где мой магазин</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Доставка и Оплата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">правила возврата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">найти магазин</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">подобрать размер</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__info">
+          <h5 class="footer__title">Каталог
+            <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть"
+              width="8" height="6">
+          </h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">новинки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">одежда</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Обувь</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">аксессуары</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Любимые бренды</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link  footer__link--red" href="">sALE%</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__info">
+          <h5 class="footer__title">Компания
+            <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть"
+              width="8" height="6">
+          </h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Философия бренда</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">контакты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Faq</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="footer__render">
+        <li class="footer__render-item">
+          <a class="footer__render-link" href="">
+            <img src="./images/icons/visa.svg" alt="иконка карты виза" width="43">
+          </a>
+        </li>
+        <li class="footer__render-item">
+          <a class="footer__render-link" href="">
+            <img src="./images/icons/mastercard.svg" alt="иконка карты мастеркард" width="30">
+          </a>
+        </li>
+        <li class="footer__render-item">
+          <a class="footer__render-link" href="">
+            <img src="./images/icons/googlePay.svg" alt="иконка карты мастеркард" width="44">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">&#169; Copyright 2024 4:20 shop. All Rights reserved.&nbsp;</p>
+        <a class="footer__copyright-link" href="">Условия пользования сайтом</a>
+      </div>
+    </div>
+  </footer> -->
+  </div>
+  <script src="libs/splide/splide.min.js"></script>
+  <!-- <script src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script> -->
+  <!-- <script src="js/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+  <!-- <script src="js/svgfixer.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
+  <!-- <script src="./src/js/app.js"></script> -->
+  <!-- <script src="./src/js/sliders.js"></script> -->
+  <script src="js/main.min.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>

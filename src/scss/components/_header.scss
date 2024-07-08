@@ -2,7 +2,7 @@
 
 
   &__offer {
-    padding: rem(18) 0 rem(21);
+    padding: 18px 0 20px;
     font-weight: 600;
     font-size: clamp(0.625rem, 0.525rem + 0.43vw, 0.875rem);
     line-height: 1;
@@ -24,13 +24,13 @@
   &__menu-main-rightrow {
     display: flex;
     align-items: center;
-    gap: rem(20);
+    gap: 30px;
   }
 
 
 
   &__link {
-    padding: rem(29) rem(34);
+    padding: 29px 34px;
     font-weight: 600;
     font-size: rem(14);
     line-height: 1;
@@ -55,9 +55,9 @@
 
     &--color {
       background-color: var(--red);
-      border-radius: rem(50);
-      padding: rem(13) rem(27);
-      margin-right: rem(30);
+      border-radius: 50px;
+      padding: 13px 27px;
+      margin-right: 30px;
       @include transition ($transition-property: (scale, background-color, box-shadow));
 
       @media (any-hover: hover) {
@@ -72,17 +72,26 @@
         }
       }
     }
+
+    @media screen and (width < 1025.01px) {
+      display: none;
+    }
   }
 
   &__location {
-    padding: rem(28) rem(34);
-    gap: rem(8);
+    padding-left: calc(16px + 8px);
+    // padding: rem(28) rem(34);
+    background: url(../images/icons/location.svg) left center / 16px 16px no-repeat;
 
     @media (any-hover: hover) {
       &:hover {
         background-color: var(--black);
       }
 
+    }
+
+    @media screen and (width < 1025.01px) {
+      display: none;
     }
   }
 
@@ -138,6 +147,8 @@
 
     a {
       color: var(--main-color);
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .header__link:hover {

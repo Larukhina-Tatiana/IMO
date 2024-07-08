@@ -120,27 +120,27 @@ var mySlider1 = new Splide(".splide1", {
   },
 });
 mySlider1.mount();
-var mySlider2 = new Splide(".splide2", {
-  perPage: 4,
-  arrows: true,
-  gap: "30px",
-  breakpoints: {
-    1199: {
-      perPage: 3,
-      gap: "30px",
-    },
-    768: {
-      perPage: 2,
-      gap: "10px",
-    },
-    // 480: {
-    //   perPage: 1,
-    //   gap: ".7rem",
-    //   height: "6rem",
-    // },
-  },
-});
-mySlider2.mount();
+// var mySlider2 = new Splide(".splide2", {
+//   perPage: 4,
+//   arrows: true,
+//   gap: "30px",
+//   breakpoints: {
+//     1199: {
+//       perPage: 3,
+//       gap: "30px",
+//     },
+//     768: {
+//       perPage: 2,
+//       gap: "10px",
+//     },
+//     // 480: {
+//     //   perPage: 1,
+//     //   gap: ".7rem",
+//     //   height: "6rem",
+//     // },
+//   },
+// });
+// mySlider2.mount();
 
 var swiperTvo = new Swiper(".current__slider-box", {
   slidesPerView: 1,

@@ -75,10 +75,10 @@
 
   &__favorite {
     position: absolute;
-    top: rem(16);
-    right: rem(19);
-    width: rem(24);
-    height: rem(22);
+    top: 25px;
+    right: 35px;
+    // width: rem(24);
+    // height: rem(22);
     z-index: 5;
 
     &::before {
@@ -100,8 +100,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: rem(20);
-    margin-bottom: rem(20);
+    margin-top: 17px;
+    margin-bottom: 12px;
   }
 
   &__price {
