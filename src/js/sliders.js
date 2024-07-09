@@ -153,3 +153,39 @@ if (document.querySelector(".current__slider-box")) {
     },
   });
 }
+
+if (document.querySelector(".fashion-news")) {
+  var swiper = new Swiper(".slider-1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pag",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+    breakpoints: {
+      661: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+        pagination: {
+          type: "fraction",
+        },
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        pagination: {
+          type: "fraction",
+          spaceBetween: 30,
+        },
+      },
+    },
+    on: {
+      init: function (swiper) {},
+    },
+  });
+}

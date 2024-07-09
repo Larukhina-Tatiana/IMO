@@ -2,12 +2,17 @@
 
   &__thumb {
     overflow: hidden;
-    border-radius: var(--border-radius);
+
 
     &--hero {
       max-width: 426px;
       // height: 646px;
       height: clamp(26.125rem, 20.285rem + 24.92vw, 40.375rem);
+    }
+
+    &--product {
+      max-width: 203px;
+      height: 301px;
     }
   }
 

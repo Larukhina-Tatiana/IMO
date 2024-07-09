@@ -1,27 +1,29 @@
 .fashion-news {
-  &.section {
-    padding-bottom: rem(60);
-  }
+  padding-top: clamp(3.75rem, 3.238rem + 2.19vw, 5rem);
+  padding-bottom: 40px;
+
 
   &__title {
-    margin-bottom: rem(40);
+    margin-bottom: clamp(0.625rem, -0.143rem + 3.28vw, 2.5rem);
   }
 
   &__list {
     padding-bottom: rem(40);
   }
 
+  &__item {
+    grid-column: 4 span;
+  }
+
   &__link {
     max-width: rem(410);
-    margin: 0 auto;
   }
 
   &__image-cover {
     position: relative;
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 1/1;
-    // height: rem(508);
+    height: 508px;
   }
 
 
@@ -43,22 +45,19 @@
     line-height: 1;
     color: var(--main-color);
     margin-top: rem(20);
-  }
 
-  & .swiper__control {
-    display: none;
-
-    .swiper-pagination-fraction {
-      display: none;
+    strong {
+      display: inline-block;
+      margin-bottom: 10px;
     }
   }
 
-  & .swiper-pag {
-    display: none;
 
+  & .swiper-pag {
     @media screen and (width < 809.99px) {
       display: flex;
       justify-content: center;
+      gap: 8px;
       position: relative;
       bottom: 0;
     }
@@ -72,14 +71,14 @@
 
 
 
+
   .swiper {
     width: 100%;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
   }
 
   .swiper-slide {
@@ -97,12 +96,4 @@
       bottom: 0;
     }
   }
-
-  // @media screen and (width < 485.99px) {
-  //   &__image-cover {
-  //     width: rem(343);
-  //     width: 100%;
-  //   }
-
-  // }
 }

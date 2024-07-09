@@ -1,0 +1,14 @@
+.discont {
+  padding-bottom: 114px;
+
+  &__content {
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  & .splide__pagination {
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -36px;
+  }
+}

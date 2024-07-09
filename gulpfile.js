@@ -41,7 +41,7 @@ function fonts() {
 function htmlInclude() {
   return src([
     "./src/html/index.html",
-    // "./src/html/about.html",
+    "./src/html/catalog.html",
     // "./src/html/positions.html",
     // "./src/html/contacts.html",
     // "./src/html/services.html",

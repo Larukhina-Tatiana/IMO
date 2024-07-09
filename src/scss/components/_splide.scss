@@ -1,9 +1,9 @@
 .splide {
   padding-bottom: 25px;
 
-  // &__slide {
-  //   min-height: rem(341);
-  // }
+  &__slide {
+    min-height: rem(341);
+  }
 
   &__pagination {
     gap: rem(8);
