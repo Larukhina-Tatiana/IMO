@@ -179,4 +179,5 @@ button,
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: clamp(0.625rem, 0.113rem + 2.19vw, 1.875rem);
 }

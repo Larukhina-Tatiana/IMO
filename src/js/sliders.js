@@ -104,31 +104,33 @@ if (document.querySelector(".splide2")) {
   mySlider2.mount();
 }
 
-$(function () {
-  $(".card-product__list").slick({
-    fade: true,
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: true,
-    asNavFor: ".card-product__dots-list",
-    focusOnSelect: false,
+if (document.querySelector(".card-product__slider")) {
+  $(function () {
+    $(".card-product__slider").slick({
+      fade: true,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      infinite: true,
+      asNavFor: ".card-product__dots-list",
+      focusOnSelect: false,
+    });
   });
-});
 
-$(function () {
-  $(".card-product__dots-list").slick({
-    dots: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    // centerMode: true,
-    arrows: false,
-    infinite: true,
-    asNavFor: ".card-product__list",
-    focusOnSelect: true,
+  $(function () {
+    $(".card-product__dots-list").slick({
+      dots: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      // centerMode: true,
+      arrows: false,
+      infinite: true,
+      asNavFor: ".card-product__list",
+      focusOnSelect: true,
+    });
   });
-});
+}
 
 if (document.querySelector(".current__slider-box")) {
   var swiperTvo = new Swiper(".current__slider-box", {
