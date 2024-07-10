@@ -1,0 +1,2 @@
+.goods__item{grid-column:3 span}@media screen and (width < 1240.01px){.goods__item{grid-column:4 span}}@media screen and (width < 768.01px){.goods__item{grid-column:6 span}}
+/*# sourceMappingURL=goods.min.css.map */

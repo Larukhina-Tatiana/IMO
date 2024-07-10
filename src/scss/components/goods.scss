@@ -1,0 +1,23 @@
+.goods {
+  &__item {
+    grid-column: 3 span;
+  }
+
+  @media screen and (width < 1240.01px) {
+    &__item {
+      grid-column: 4 span;
+    }
+  }
+
+  @media screen and (width < 768.01px) {
+    &__item {
+      grid-column: 6 span;
+    }
+  }
+
+  // @media screen and (width < 668.01px) {
+  //   &__item {
+  //     grid-column: 12 span;
+  //   }
+  // }
+}

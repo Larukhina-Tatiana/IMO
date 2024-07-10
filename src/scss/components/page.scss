@@ -1,0 +1,13 @@
+.page {
+  &--catalog {
+    .subscription__bg {
+      background-color: #FF4003;
+    }
+  }
+
+  &--main {
+    .subscription__bg {
+      background-color: #FFC803;
+    }
+  }
+}
