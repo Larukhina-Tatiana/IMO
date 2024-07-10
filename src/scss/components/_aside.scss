@@ -1,0 +1,120 @@
+.aside {
+  // @include adaptivevalue(width, 375, 290, 1620, 320, 1);
+  // @include adaptivevalue(margin-right, 30, 0, 1620, 320, 1);
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: rem(23) rem(30);
+    margin-bottom: rem(30);
+    // @include adaptivevalue(font-size, 20, 18, 1620, 320, 1);
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--cod-gray);
+    cursor: pointer;
+    @include transition ($transition-property: all);
+  }
+
+  &__content-span {
+    padding-left: rem(20);
+    color: var(--cod-gray);
+  }
+
+  &__form {
+    &-item-drop {
+      margin: rem(30) 0;
+
+      &--marginbottom {
+        margin-bottom: rem(80);
+      }
+    }
+
+    &-title--padding {
+      padding-left: rem(30);
+    }
+
+
+    &-content {
+      margin-top: rem(10);
+
+      &-box {
+        &:not(:last-child) {
+          margin-bottom: rem(20);
+        }
+      }
+
+      &-label {
+        font-size: rem(16);
+        cursor: pointer;
+      }
+
+      &-quantity {
+        padding-left: rem(15);
+        color: var(--accent);
+      }
+    }
+
+
+
+
+    &.aside__form-content--radio {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__content-star {
+    display: inline-block;
+    color: var(--accent);
+    padding: 0;
+    font-size: rem(22);
+
+    &:not(:last-child) {
+      padding-right: rem(10);
+    }
+  }
+}
+
+
+
+.jq-checkbox,
+.jq-radio {
+  width: rem(18);
+  height: rem(18);
+  background: var(--white);
+  box-shadow: none;
+  border: rem(1) solid var(--gray);
+  vertical-align: rem(-2);
+  border-radius: rem(3);
+  margin: 0 rem(15) 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: var(--white);
+  border: rem(1) solid var(--accent);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: rem(12);
+    height: rem(12);
+    background: var(--accent);
+    border-radius: rem(1);
+    top: calc((100% - 12px) / 2);
+    left: calc((100% - 12px) / 2);
+  }
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  display: none;
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  background: var(--accent);
+  border-radius: none;
+  box-shadow: none;
+}

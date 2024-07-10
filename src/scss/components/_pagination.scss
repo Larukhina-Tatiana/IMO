@@ -9,7 +9,7 @@
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    @include transition ($transition-property: text-decoration);
+    @include transition ($transition-property: (text-decoration, scale));
 
     &:focus {
       outline: 2px solid var(--primary);
@@ -18,7 +18,7 @@
 
     @media (any-hover: hover) {
       &:hover {
-        color: var(--primary);
+        scale: 1.1;
       }
     }
 
