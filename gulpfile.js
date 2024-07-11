@@ -154,7 +154,7 @@ function scripts() {
       "libs/jquery.formstyler.js",
       "libs/jquery.rateyo.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
-      // "libs/choices/choices.min.js",
+      "libs/choices/choices.min.js",
       "node_modules/nouislider/dist/nouislider.js",
       // "node_modules/simplelightbox/dist/simple-lightbox.min.js",
       // "node_modules/siema/dist/siema.min.js",

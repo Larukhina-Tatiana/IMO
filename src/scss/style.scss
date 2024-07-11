@@ -3,7 +3,8 @@
 @import "././libs/slick/slick";
 @import "././libs/splide/splide.min";
 @import "././libs/ion.rangeSlider.min";
-@import "../../libs/jquery.formstyler";
+@import "././libs/jquery.formstyler";
+@import "../../libs/choices/choices.min";
 
 
 
@@ -56,6 +57,7 @@
 
 
 @import "./components/_catalog";
+@import "./components/form-size";
 
 // @import "./components/swiper-pagination-bullet";
 // @import "./components/_advantages";

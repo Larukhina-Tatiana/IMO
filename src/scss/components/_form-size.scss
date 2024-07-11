@@ -1,0 +1,16 @@
+.form-size {
+  margin: 20px 0;
+
+  &__select {
+    padding: 14px 11px;
+    border: 1px solid #c5c5c5;
+    // border: 1px solid rgba(#000, .2);
+    border-radius: 37px;
+    width: 203px;
+    height: 47px;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    background: #fff;
+  }
+}
