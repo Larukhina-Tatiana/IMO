@@ -2,6 +2,8 @@
 @import "././libs/swiper/swiper-bundle.min";
 @import "././libs/slick/slick";
 @import "././libs/splide/splide.min";
+@import "././libs/ion.rangeSlider.min";
+@import "../../libs/jquery.formstyler";
 
 
 
@@ -45,6 +47,8 @@
 @import "./components/_form";
 @import "./components/_fashion-news";
 @import "./components/_footer";
+@import "./components/range";
+
 
 
 @import "./components/breadcrumbs";
