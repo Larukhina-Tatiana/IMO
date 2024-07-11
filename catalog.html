@@ -1308,28 +1308,12 @@
           <div class="aside__btn">Фильтр товаров</div>
           <form class="filters-form aside__form">
             <ul class="filters-form__list aside__form-list">
-              <li class="aside__form-item-drop aside__form-item-drop--marginbottom">
-                <p class="aside__form-title aside__form-title--padding title-form">Цена</p>
-                <div class="range">
-                  <div class="range__values">
-                    <input class="range__values-input" id="min" type="text">
-                    <input class="range__values-input" id="max" type="text">
-                  </div>
-                  <div class="range__slider">
-                    <div id="range"></div>
-                  </div>
-                </div>
-                <!-- <div class="aside__form-content">
-                  <input type="text" class="js-range-slider" name="my_range" value="" data-min="450" data-max="8500"
-                    data-from="750" data-to="2500">
-                </div> -->
-              </li>
               <li class="aside__form-item-drop">
                 <p class="aside__form-title title-form aside__btn">Категории</p>
                 <div class="aside__form-content">
                   <div class="aside__form-content-box">
 
-                    <label class="aside__form-content-label">
+                    <label class="aside__form-content-label aside__form-content-label--red">
                       <input class="filter-style" type="checkbox">
                       Sale%
                       <span class="aside__form-content-quantity">90 785</span>
@@ -1346,72 +1330,76 @@
                     <label class="aside__form-content-label">
                       <input class="filter-style" type="checkbox">
                       Одежда
-                      <span class="aside__form-content-quantity">(265)</span>
+                      <span class="aside__form-content-quantity">265</span>
                     </label>
                   </div>
                   <div class="aside__form-content-box">
                     <label class="aside__form-content-label">
                       <input class="filter-style" type="checkbox">
                       Обувь
-                      <span class="aside__form-content-quantity">(18)</span>
+                      <span class="aside__form-content-quantity">18</span>
                     </label>
                   </div>
                   <div class="aside__form-content-box">
                     <label class="aside__form-content-label">
                       <input class="filter-style" type="checkbox">
                       Аксессуары
-                      <span>(170)</span>
+                      <span class="aside__form-content-quantity">170</span>
                     </label>
                   </div>
                   <div class="aside__form-content-box">
                     <label class="aside__form-content-label">
                       <input class="filter-style" type="checkbox">
                       Любимые бренды
-                      <span class="aside__form-content-quantity">(136)</span>
+                      <span class="aside__form-content-quantity">136</span>
                     </label>
                   </div>
                 </div>
               </li>
               <li class="aside__form-item-drop">
                 <p class="aside__form-title title-form aside__btn">Размер</p>
-                <div class="aside__form-content">
-                  <div class="aside__form-content-box">
+                <div class="aside__form-content aside__form-content-size flex">
+                  <label class="aside__form-content-label">
+                    <input class="filter-style" type="checkbox">
+                    XS
+                  </label>
 
-                    <label class="aside__form-content-label">
-                      <input class="filter-style" type="checkbox">
-                      XS
-                      <span class="aside__form-content-quantity">(250)</span>
-                    </label>
+                  <label class="aside__form-content-label">
+                    <input class="filter-style" type="checkbox">
+                    S
+                  </label>
+
+                  <label class="aside__form-content-label">
+                    <input class="filter-style" type="checkbox">
+                    M
+                  </label>
+
+                  <label class="aside__form-content-label">
+                    <input class="filter-style" type="checkbox">
+                    L
+                  </label>
+
+                  <label class="aside__form-content-label">
+                    <input class="filter-style" type="checkbox">
+                    Xl
+                  </label>
+                </div>
+              </li>
+              <li class="aside__form-item-drop aside__form-item-drop--marginbottom">
+                <p class="aside__form-title aside__form-title--padding title-form">Цена</p>
+                <div class="range">
+                  <div class="range__values">
+                    <input class="range__values-input" id="min" type="text">
+                    <input class="range__values-input" id="max" type="text">
                   </div>
-                  <div class="aside__form-content-box">
-                    <label class="aside__form-content-label">
-                      <input class="filter-style" type="checkbox">
-                      S
-                      <span class="aside__form-content-quantity">(25)</span>
-                    </label>
-                  </div>
-                  <div class="aside__form-content-box">
-                    <label class="aside__form-content-label">
-                      <input class="filter-style" type="checkbox">
-                      M
-                      <span class="aside__form-content-quantity">(265)</span>
-                    </label>
-                  </div>
-                  <div class="aside__form-content-box">
-                    <label class="aside__form-content-label">
-                      <input class="filter-style" type="checkbox">
-                      L
-                      <span class="aside__form-content-quantity">(18)</span>
-                    </label>
-                  </div>
-                  <div class="aside__form-content-box">
-                    <label class="aside__form-content-label">
-                      <input class="filter-style" type="checkbox">
-                      Xl
-                      <span class="aside__form-content-quantity">(170)</span>
-                    </label>
+                  <div class="range__slider">
+                    <div id="range"></div>
                   </div>
                 </div>
+                <!-- <div class="aside__form-content">
+                                <input type="text" class="js-range-slider" name="my_range" value="" data-min="450" data-max="8500"
+                                  data-from="750" data-to="2500">
+                              </div> -->
               </li>
             </ul>
           </form>

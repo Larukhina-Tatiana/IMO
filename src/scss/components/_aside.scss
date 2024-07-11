@@ -1,18 +1,24 @@
 .aside {
   // @include adaptivevalue(width, 375, 290, 1620, 320, 1);
   // @include adaptivevalue(margin-right, 30, 0, 1620, 320, 1);
+  width: 343px;
+  padding-left: 9px;
 
   &__btn {
     display: block;
     width: 100%;
-    padding: 23px 30px;
+    padding-left: 30px;
+    // padding: 31px 11px;
     margin-bottom: 30px;
     // @include adaptivevalue(font-size, 20, 18, 1620, 320, 1);
-    font-weight: 600;
-    color: var(--red);
-    background-color: var(--cod-gray);
     cursor: pointer;
     @include transition ($transition-property: all);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--main-color);
+    background: url(../images/icons/arrow-up.svg) left top / 13px 7px no-repeat;
   }
 
   &__content-span {
@@ -33,24 +39,42 @@
       padding-left: 30px;
     }
 
+    &-content.flex {
+      gap: 25px;
+    }
 
     &-content {
-      margin-top: 10px;
 
       &-box {
         &:not(:last-child) {
-          margin-bottom: 20px;
+          margin-bottom: 21px;
         }
       }
 
       &-label {
-        font-size: 16px;
+        display: flex;
+        font-size: 14px;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
         cursor: pointer;
+
+        &--red {
+          color: var(--red);
+        }
       }
 
       &-quantity {
-        padding-left: 15px;
-        color: var(--accent);
+        display: inline-block;
+        margin-left: auto;
+        color: var(--main-color);
+      }
+    }
+
+    &-content-size {
+
+      .jq-checkbox,
+      .jq-radio {
+        margin: 0 5px 0 0;
       }
     }
 
@@ -80,18 +104,20 @@
 .jq-radio {
   width: 18px;
   height: 18px;
-  background: var(--main-color);
+  background: var(--white);
   box-shadow: none;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--main-color);
   vertical-align: -2px;
-  border-radius: 3px;
+  // border-radius: 3px;
   margin: 0 15px 0 0;
 }
 
+
+
 .jq-checkbox.checked,
 .jq-radio.checked {
-  background: var(--white);
-  border: 1px solid var(--accent);
+  background: var(--main-color);
+  // border: 1px solid var(--orang);
   position: relative;
 
   &::after {
@@ -99,10 +125,11 @@
     content: "";
     width: 12px;
     height: 12px;
-    background: var(--accent);
-    border-radius: 1px;
-    top: calc((100% - 12px) / 2);
-    left: calc((100% - 12px) / 2);
+    background: url(../images/icons/check.svg) left center / 12px 12px no-repeat;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
