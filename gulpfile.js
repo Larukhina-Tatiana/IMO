@@ -42,6 +42,7 @@ function htmlInclude() {
   return src([
     "./src/html/index.html",
     "./src/html/catalog.html",
+    "./src/html/page-card-products.html",
     // "./src/html/positions.html",
     // "./src/html/contacts.html",
     // "./src/html/services.html",
