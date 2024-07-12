@@ -1,0 +1,19 @@
+.descr-product {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    display: inline-block;
+    width: 156px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: inline-block;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+  }
+}

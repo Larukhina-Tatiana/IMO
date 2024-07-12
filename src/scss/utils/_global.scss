@@ -84,8 +84,8 @@ dd {
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    // font-size: rem(14);
-    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+    font-size: rem(14);
+    // font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
     line-height: 1.6;
     color: var(--main-color);
     background-color: var(--white);
