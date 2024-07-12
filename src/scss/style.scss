@@ -4,7 +4,8 @@
 @import "././libs/splide/splide.min";
 @import "././libs/ion.rangeSlider.min";
 @import "././libs/jquery.formstyler";
-@import "../../libs/choices/choices.min";
+@import "././libs/choices/choices.min";
+@import "././libs/nouislider.min";
 
 
 
@@ -41,7 +42,7 @@
 @import "./components/pagination";
 @import "./components/goods";
 @import "./components/aside";
-// @import "./components/catalog-page";
+@import "./components/catalog-page";
 @import "./components/_current";
 @import "./components/_subscription";
 @import "./components/_social";
