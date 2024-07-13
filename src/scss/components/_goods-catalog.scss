@@ -1,0 +1,15 @@
+.goods-catalog {
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__titles {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+}
