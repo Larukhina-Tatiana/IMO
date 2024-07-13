@@ -6,28 +6,61 @@
   }
 
   &__title {
-    position: relative;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
     text-align: left;
 
-    &::after {
-      position: absolute;
-      content: url("../images/icons/arrow-down-accordeon.svg");
-      width: 16px;
-      height: 9px;
-      right: 0;
-      top: 0;
+    &-svg {
+      @include transition ($transition-property: transform);
     }
   }
 
   &__text {
+    display: none;
     margin-top: 30px;
   }
 
   &__text-list {
     margin-top: 30px;
+  }
+
+  &__text-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &::marker {
+      font-size: 0;
+    }
+  }
+
+  &__title.title--active {
+    .accordeon__title-svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__link {
+    width: 260px;
+
+    &--courier {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/courier.svg) left center / 32px 32px no-repeat;
+    }
+
+    &--points {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/points.svg) left center / 32px 32px no-repeat;
+    }
+
+    &--pickup {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/pickup.svg) left center / 32px 32px no-repeat;
+    }
   }
 }
