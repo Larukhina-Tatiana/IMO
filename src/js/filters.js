@@ -1,7 +1,7 @@
 // открытие-закрытие заголовков footer__info-list
-$(".footer__body-title").on("click", function () {
+$(".filters__btn").on("click", function () {
   $(this).next().slideToggle();
-  $(this).toggleClass("footer__body-title--active");
+  $(this).toggleClass("active");
 });
 
 $(".filter-style").styler();

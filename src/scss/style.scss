@@ -41,8 +41,11 @@
 @import "./components/_card-product";
 @import "./components/pagination";
 @import "./components/goods";
-@import "./components/aside";
-@import "./components/catalog-page";
+// @import "./components/aside";
+// @import "./components/catalog-page";
+
+@import "./components/noui";
+@import "./components/range";
 @import "./components/_current";
 @import "./components/_subscription";
 @import "./components/_social";
@@ -60,6 +63,7 @@
 @import "./components/_catalog";
 @import "./components/form-size";
 @import "./components/descr-product";
+@import "./components/filters";
 @import "./components/accordeon";
 
 // @import "./components/swiper-pagination-bullet";

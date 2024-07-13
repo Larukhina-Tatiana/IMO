@@ -4,22 +4,22 @@
   width: 343px;
   padding-left: 9px;
 
-  &__btn {
-    display: block;
-    width: 100%;
-    padding-left: 30px;
-    // padding: 31px 11px;
-    margin-bottom: 30px;
-    // @include adaptivevalue(font-size, 20, 18, 1620, 320, 1);
-    cursor: pointer;
-    @include transition ($transition-property: all);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1;
-    text-transform: uppercase;
-    color: var(--main-color);
-    background: url(../images/icons/arrow-up.svg) left top / 13px 7px no-repeat;
-  }
+  // &__btn {
+  //   display: block;
+  //   width: 100%;
+  //   padding-left: 30px;
+  //   // padding: 31px 11px;
+  //   margin-bottom: 30px;
+  //   // @include adaptivevalue(font-size, 20, 18, 1620, 320, 1);
+  //   cursor: pointer;
+  //   @include transition ($transition-property: all);
+  //   font-weight: 600;
+  //   font-size: 14px;
+  //   line-height: 1;
+  //   text-transform: uppercase;
+  //   color: var(--main-color);
+  //   background: url(../images/icons/arrow-up.svg) left top / 13px 7px no-repeat;
+  // }
 
   &__content-span {
     padding-left: 20px;
