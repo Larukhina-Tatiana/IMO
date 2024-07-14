@@ -1,5 +1,6 @@
 .filters {
   display: none;
+  box-sizing: content-box;
   animation: opac .7s;
   position: absolute;
   z-index: 7;
@@ -53,6 +54,7 @@
 
     &__content.flex {
       gap: 25px;
+      justify-content: center;
     }
 
     &__drop {

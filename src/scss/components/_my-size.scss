@@ -1,0 +1,21 @@
+.my-size {
+  margin-bottom: 42px;
+
+  &__tabl {
+    width: 100%;
+    padding: 18px 12px;
+    // background-color: rgba(168, 168, 168, 0.2);
+
+    background: url(../images/icons/icon-my-size.svg) left 12px center / 24px 24px no-repeat rgba(168, 168, 168, 0.2);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: var(--main-color);
+
+
+    // height: 48px;
+  }
+}
