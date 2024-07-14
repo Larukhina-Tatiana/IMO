@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/page.min.css"],"names":[],"mappings":"AAAA,+BACE,UAAA,KAEF,iCACE,iBAAA,QAEF,8BACE,iBAAA","file":"page.min.css","sourcesContent":[".page--catalog .section__title {\n  font-size: 38px;\n}\n.page--catalog .subscription__bg {\n  background-color: #FF4003;\n}\n.page--main .subscription__bg {\n  background-color: #FFC803;\n}"]}

@@ -1,0 +1,50 @@
+.profile {
+  padding-top: 52px;
+  padding-bottom: 96px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    padding-top: 60px;
+    padding-bottom: 44px;
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--valeus-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+    text-align: center;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: calc(-1 * var(--valeus-gap));
+      width: 1px;
+      height: 100%;
+      // background-color: #dededb;
+      background-color: red;
+      // width: 42px;
+      // height: 42px;
+    }
+  }
+
+  &__head {
+    line-height: 130%;
+    letter-spacing: 0.04em;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__meaning {
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #1d1d1d;
+  }
+}
