@@ -1311,34 +1311,7 @@
               d="M10.625 13.437h-7.5M16.875 13.437h-3.75M5.625 6.562h-2.5M16.875 6.562h-8.75M8.125 4.687v3.75M13.125 15.312v-3.75" />
           </svg>
         </button>
-
-        <div class="options-sort">
-          <button class="options__btn options__btn--sort">Сортировка
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="m8.75 13.75-2.5 2.5-2.5-2.5M6.25 3.75v12.5M11.25 6.25l2.5-2.5 2.5 2.5M13.75 16.25V3.75" />
-            </svg>
-          </button>
-          <div class="options-sort__popup">
-            <a class="options-sort__popup-item options-sort__popup-item--selected" href="#">
-              По популярности
-            </a>
-            <a class="options-sort__popup-item" href="#">
-              От дешевых к дорогим
-            </a>
-            <a class="options-sort__popup-item" href="#">
-              От дорогих к дешевым
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="options">
-      <div class="goods__filters">
-
-        <div class="catalog-page__aside filters">
-  <div class="filters__btn">Фильтр товаров</div>
+        <div class="filters">
   <form class="filters-form">
     <ul class="filters-form__list">
       <li class="filters-form__drop">
@@ -1400,6 +1373,9 @@
           </svg>
           Размер
         </p>
+        <div class="my-size">
+          <button class="my-sizi__tabl">Как определить свой размер?</button>
+        </div>
         <div class="filters-form__content filters-form__content--size flex">
           <label class="filters-form__label">
             <input class="filter-style" type="checkbox">
@@ -1449,8 +1425,29 @@
   </form>
 </div>
 
+        <div class="options-sort">
+          <button class="options__btn options__btn--sort">Сортировка
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="m8.75 13.75-2.5 2.5-2.5-2.5M6.25 3.75v12.5M11.25 6.25l2.5-2.5 2.5 2.5M13.75 16.25V3.75" />
+            </svg>
+          </button>
+          <div class="options-sort__popup">
+            <a class="options-sort__popup-item options-sort__popup-item--selected" href="#">
+              По популярности
+            </a>
+            <a class="options-sort__popup-item" href="#">
+              От дешевых к дорогим
+            </a>
+            <a class="options-sort__popup-item" href="#">
+              От дорогих к дешевым
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+
+
   </div>
   <!-- <a class="popular__link link__catalog link" href="">В каталог</a> -->
   <ul class="catalog goods grid">
@@ -2068,9 +2065,9 @@
   <script src="js/main.min.js"></script>
   <script src="./src/js/subscription.js"></script>
   <script src="./src/js/popup.js"></script>
+  <script src="./src/js/filters.js"></script>
   <script src="./src/js/footer-title.js"></script>
   <!-- <script src="js/catalog.js"></script> -->
-  <script src="./src/js/filters.js"></script>
   <!-- <script src="js/main.js"></script> -->
 </body>
 

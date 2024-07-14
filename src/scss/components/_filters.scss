@@ -1,6 +1,19 @@
 .filters {
+  display: none;
+  animation: opac .7s;
+  position: absolute;
+  z-index: 7;
+  top: 35px;
+  right: 5px;
+
+  padding: 2rem 2rem 2rem 4.5rem;
+
+  border-radius: 1rem;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
   width: 343px;
-  padding-left: 9px;
+  // padding-left: 9px;
+  background-color: var(--white);
+  @include transition ($transition-property: transform);
 
   &__btn {
     width: 100%;
@@ -69,5 +82,19 @@
         margin-bottom: 21px;
       }
     }
+  }
+}
+
+.filters.active {
+  display: block;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

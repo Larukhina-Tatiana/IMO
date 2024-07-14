@@ -13,6 +13,7 @@
               d="M10.625 13.437h-7.5M16.875 13.437h-3.75M5.625 6.562h-2.5M16.875 6.562h-8.75M8.125 4.687v3.75M13.125 15.312v-3.75" />
           </svg>
         </button>
+        @include('filters.html')
 
         <div class="options-sort">
           <button class="options__btn options__btn--sort">Сортировка
@@ -36,13 +37,7 @@
       </div>
     </div>
 
-    <div class="options">
-      <div class="goods__filters">
 
-        @include('filters.html')
-
-      </div>
-    </div>
   </div>
   <!-- <a class="popular__link link__catalog link" href="">В каталог</a> -->
   @include('catalog-list.html')

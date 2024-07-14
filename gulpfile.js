@@ -40,9 +40,9 @@ function fonts() {
 
 function htmlInclude() {
   return src([
-    // "./src/html/index.html",
-    // "./src/html/catalog.html",
-    // "./src/html/page-card-products.html",
+    "./src/html/index.html",
+    "./src/html/catalog.html",
+    "./src/html/page-card-products.html",
     "./src/html/my-profile.html",
     // "./src/html/positions.html",
     // "./src/html/contacts.html",
