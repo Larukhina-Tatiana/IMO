@@ -1,0 +1,43 @@
+.personal-data {
+
+  &__box {
+    padding-top: 95px;
+    border-top: 1px solid #dededb;
+  }
+
+  &__nav {
+    grid-column: 2 span;
+
+    &-item {
+      padding-left: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-btn {
+      font-weight: 500;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    // grid-column: 7 span;
+    // grid-column-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+
+  .personal-data__nav-btn.mixitup-control-active {
+
+    .personal-data__nav-btn::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: var(--main-color);
+    }
+  }
+}

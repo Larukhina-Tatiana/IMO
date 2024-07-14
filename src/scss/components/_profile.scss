@@ -1,6 +1,9 @@
 .profile {
   padding-top: 52px;
-  padding-bottom: 96px;
+
+  &__container {
+    max-width: 1082px;
+  }
 
   &__title {
     text-align: center;
