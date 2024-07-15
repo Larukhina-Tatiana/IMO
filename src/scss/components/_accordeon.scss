@@ -16,9 +16,13 @@
     text-align: left;
     cursor: pointer;
 
-    &-svg {
-      @include transition ($transition-property: transform);
+    &::after {
+      content: url('../images/icons/arrow-up-accordeon.svg');
+      @include transition ($transition-property: content);
     }
+
+    // &-svg {
+    // }
   }
 
   &__text {
@@ -41,8 +45,11 @@
   }
 
   &__title.title--active {
-    .accordeon__title-svg {
-      transform: rotate(180deg);
+    &::after {
+      content: url('../images/icons/arrow-down-accordeon.svg');
+      // .accordeon__title-svg {
+      //   transform: rotate(180deg);
+      // }
     }
   }
 
