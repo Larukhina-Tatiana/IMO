@@ -1,0 +1,45 @@
+.tabs {
+  display: inline-block;
+  margin-right: rem(50);
+
+  &__overflow {
+    overflow-x: hidden;
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item.tabs__content--active {
+    display: block;
+  }
+
+  &__link {
+    position: relative;
+    color: var(--main-text);
+    text-align: center;
+    font-size: rem(15);
+    font-weight: 500;
+    padding-bottom: rem(5);
+    @include transition ($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+  }
+
+  @media screen and (width < 770.01px) {
+    &__overflow {
+      overflow-x: scroll;
+    }
+  }
+}
+
+
+
+.search__content-item.tabs__content--active {
+  display: block;
+}
