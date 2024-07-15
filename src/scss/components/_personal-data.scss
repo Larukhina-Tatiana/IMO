@@ -1,18 +1,19 @@
 .personal-data {
 
   &__box {
-    padding-top: 95px;
+    padding-top: 85px;
     border-top: 1px solid #dededb;
   }
 
   &__nav {
     grid-column: 2 span;
+    padding-top: 7px;
 
     &-item {
       padding-left: 16px;
 
       &:not(:last-child) {
-        margin-bottom: 24px;
+        margin-bottom: 15px;
       }
     }
 

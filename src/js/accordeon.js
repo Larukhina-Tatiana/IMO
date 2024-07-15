@@ -17,7 +17,7 @@
 //   });
 // }
 
-if (document.querySelector(".accordeon")) {
+if (document.querySelector([".accordeon", ".person-form"])) {
   $(".accordeon__title").on("click", function () {
     $(this).toggleClass("title--active");
     $(this).next().slideToggle("200");

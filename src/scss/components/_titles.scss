@@ -3,6 +3,11 @@
     font-size: clamp(1.25rem, 0.999rem + 1.09vw, 1.875rem);
     line-height: 1;
     color: var(--black);
+
+
+    &--h4 {
+      font-size: 20px;
+    }
   }
 
   .slider__title {
