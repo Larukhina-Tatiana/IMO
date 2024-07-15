@@ -1,9 +1,10 @@
 .person-form {
   &__title {
     text-transform: none;
+    color: #1d1d1d;
 
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
   }
 
@@ -12,7 +13,7 @@
     width: 100%;
 
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
     }
 
     display: flex;
@@ -127,6 +128,13 @@
         margin-right: 16px;
       }
 
+    }
+  }
+
+  &--password {
+    .person-form__label-span {
+      color: var(--main-color);
+      text-transform: none;
     }
   }
 }
