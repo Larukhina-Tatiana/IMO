@@ -44,7 +44,7 @@ function htmlInclude() {
     "./src/html/catalog.html",
     "./src/html/page-card-products.html",
     "./src/html/my-profile.html",
-    "./src/html/backet.html",
+    "./src/html/page-basket.html",
     // "./src/html/positions.html",
     // "./src/html/contacts.html",
     // "./src/html/services.html",
@@ -191,20 +191,20 @@ function scripts() {
 function images() {
   // return src(["app/images/**/*.*", "!app/images/**/*.svg"])
   return (
-    src(["images/src/*.*", "!images/src/*.svg"])
+    src(["src/images/*.*", "!images/src/*.svg"])
       .pipe(newer("images"))
       .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
-      .pipe(src("images/src/*.*"))
+      .pipe(src("src/images/*.*"))
       .pipe(newer("images"))
       .pipe(webp())
 
-      .pipe(src("images/src/*.*"))
+      .pipe(src("src/images/*.*"))
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/contacts"))
+      .pipe(dest("images/cart"))
   );
 }
 

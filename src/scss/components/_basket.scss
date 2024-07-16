@@ -1,0 +1,13 @@
+.basket {
+  &__info {
+    grid-column: 6 span;
+  }
+
+  &__delivery {
+    padding-top: 25px;
+  }
+
+  &-cart {
+    grid-column: 6 span;
+  }
+}

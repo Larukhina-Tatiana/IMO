@@ -1,8 +1,9 @@
   .section__title {
     font-weight: 600;
-    font-size: clamp(1.25rem, 0.999rem + 1.09vw, 1.875rem);
+    // font-size: clamp(1.25rem, 0.999rem + 1.09vw, 1.875rem);
     line-height: 1;
     color: var(--black);
+    letter-spacing: normal;
 
 
     &--h4 {

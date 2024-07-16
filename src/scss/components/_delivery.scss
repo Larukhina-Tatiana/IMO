@@ -1,0 +1,35 @@
+.delivery {
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &::marker {
+      font-size: 0;
+    }
+  }
+
+  &__link {
+    width: 260px;
+
+    &--courier {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/courier.svg) left center / 32px 32px no-repeat;
+    }
+
+    &--points {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/points.svg) left center / 32px 32px no-repeat;
+    }
+
+    &--pickup {
+      padding-left: calc(32px + 16px);
+      background: url(../images/icons/pickup.svg) left center / 32px 32px no-repeat;
+    }
+  }
+}

@@ -1,14 +1,16 @@
 .container {
   min-width: 375px;
   margin: 0 auto;
-  // outline: 1px solid brown;
+  outline: 1px solid brown;
   max-width: 1290px;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 
-  @media screen and (width < 768.99px) {
-    padding-right: rem(16);
-    padding-left: rem(16);
-  }
+  // @media screen and (width < 768.99px) {
+  //   padding-right: rem(16);
+  //   padding-left: rem(16);
+  // }
 }
 
 

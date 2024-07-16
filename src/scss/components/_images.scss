@@ -2,6 +2,7 @@
 
   &__thumb {
     overflow: hidden;
+    margin: 0 auto;
 
 
     &--hero {
@@ -13,6 +14,11 @@
     &--product {
       max-width: 203px;
       height: 301px;
+    }
+
+    &--cart {
+      max-width: 68px;
+      // max-height: 96px;
     }
   }
 

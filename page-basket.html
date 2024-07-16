@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет-магазин Одежда - Карточка товара</title>
+  <title>Интернет-магазин Одежда Корзина</title>
+
+  <!-- <link rel="stylesheet" href="libs/splide.min.css"> -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"> -->
 
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
@@ -13,86 +15,56 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page page--caard">
+<body class="page page--basket">
   
 
+
   <main>
-    <section class="page-card">
+    <div class="container">
+  <nav class="breadcrumbs">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Одежда</a></li>
+      <li class="breadcrumbs__item"><span class="breadcrumbs__nolink">Корзина</span></li>
+    </ol>
+  </nav>
+</div>
+    <section class="basket">
   <div class="container">
-    <nav class="breadcrumbs">
-  <ol class="breadcrumbs__list mobile-overflow">
-    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Одежда</a></li>
-    <li class="breadcrumbs__item"><span class="breadcrumbs__nolink">Зип худи шерпа с капюшоном (белый)</span></li>
-  </ol>
-</nav>
-    <div class="page-card__box grid">
-      <div class="page-card__slider"></div>
-      <div class="page-card__content">
-        <div class="page-card__box-title">
-          <h2 class="page-card__title section__title">Зип худи шерпа с капюшоном
-            (белый)</h2>
-          <button class="page-card__favorite"></button>
-        </div>
-        <dl class="page-card__price">
-          <dt class="page-card__price-name">Артикул</dt>
-          <dd class="page-card__price-descr">st0171</dd>
-        </dl>
-        <div class="page-card__peculiarities">
-          <div class="page-card__peculiarities-sale">Sale - 20%</div>
-          <div class="page-card__peculiarities-new">new</div>
-        </div>
-        <dl class="page-card__price price">
-          <dt class="page-card__price-name">цена</dt>
-          <dd class="page-card__price-price">1 199.99 ₴</dd>
-        </dl>
-        <form action="#" class="page-card__form form-size">
-          <label class="form__label" for="size">
-            <select class="form-size__select form__select" name="size" id="size" required>
-              <option value="">Выбрать размер</option>
-              <option value="">XS</option>
-              <option value="">S</option>
-              <option value="">M</option>
-              <option value="">L</option>
-              <option value="">Xl</option>
-            </select>
-          </label>
-        </form>
-        <div class="quantity">
-          <input class="nights" type="number" min="1" max="15" step="1" value="1">
-        </div>
-        <div class="page-card__term">
-          <dl class="descr-product">
-            <dt class="descr-product__name">Уход и стирка</dt>
-            <dd class="descr-product__text">деликатная машинная стирка</dd>
-          </dl>
-          <dl class="descr-product">
-            <dt class="descr-product__name">Состав</dt>
-            <dd class="descr-product__text">80% хлопок 20% полиэстер</dd>
-          </dl>
-          <dl class="descr-product">
-            <dt class="descr-product__name">Страна бренда</dt>
-            <dd class="descr-product__text">США</dd>
-          </dl>
-        </div>
-        <ul class="page-card__accordeon accordeon accordeon__list">
-  <li class="accordeon__item">
-    <button class="accordeon__title">
-      описание товара
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="none">
-        <path stroke="#565656" stroke-linecap="square" d="M14.25 8.75 8 2.5 1.75 8.75" />
-      </svg> -->
-    </button>
-  </li>
-  <li class="accordeon__item">
-    <button class="accordeon__title">Таблица размеров</button>
-  </li>
-  <li class="accordeon__item">
-    <button class="accordeon__title">
-      Условия доставки
-    </button>
-    <div class="delivery accordeon__text">
+    <div class="basket__box grid">
+      <div class="basket__info">
+        <form action="#" class="person-form info-client">
+  <h2 class="info-client__title section__title">Информация о клиенте</h2>
+  <div class="person-form__box">
+    <label class="info-client__label" for="first-name">
+      <span class="info-client__label-title person-form__label-necessarily">Ваше имя</span>
+      <span class="info-client__label-span">Имя получателя заказа</span>
+      <input class="info-client__input person-form__input" type="text" name="first-name" id="first-name"
+        placeholder="Ваше имя" required="">
+    </label>
+
+    <label class="info-client__label" for="e-mail">
+      <span class="info-client__label-title person-form__label-necessarily">E-mail</span>
+      <span class="info-client__label-span">Для отправки деталей заказа, статуса производства и
+        доставки</span>
+      <input class="info-client__input person-form__input" type="email" name="e-mail" id="e-mail"
+        placeholder="Введите e-mail" required="">
+    </label>
+
+    <label class="info-client__label" for="phone">
+      <span class="info-client__label-title person-form__label-necessarily">Телефон</span>
+      <span class="info-client__label-span">Чтобы мы могли связаться для уточнения деталей доставки или
+        заказанного товара.
+      </span>
+      <input class="info-client__input person-form__input" type="tel" name="phone" id="phone" placeholder="+380"
+        required="">
+    </label>
+  </div>
+</form>
+        <div class="basket__delivery">
+          <h2 class="info-client__title section__title">Информация о доставке</h2>
+          <div class="delivery accordeon__text">
   <p>
     Бесплатная доставка при заказе от 2 000 грн.
   </p>
@@ -118,38 +90,58 @@
     </li>
   </ol>
 </div>
-    <!-- <div class="accordeon__text">
-      <p>
-        Бесплатная доставка при заказе от 2 000 грн.
-      </p>
-      <p>Вы можете выбрать подходящий для вас способ доставки товара:</p>
-      <ol class="accordeon__text-list">
-        <li class="accordeon__text-item">
-          <a class="accordeon__link accordeon__link--courier" href="">
-            Курьерская доставка.
-            Срок – от 1 дня.
-          </a>
-        </li>
-        <li class="accordeon__text-item">
-          <a class="accordeon__link accordeon__link--points" href="">
-            Пункты выдачи заказов и постаматы.
-            Срок – от 1 дня.
-          </a>
-        </li>
-        <li class="accordeon__text-item">
-          <a class="accordeon__link accordeon__link--pickup" href="">
-            Самовывозом из магазина.
-            Срок – от 1 дня.
-          </a>
-        </li>
-      </ol>
-    </div> -->
-  </li>
-</ul>
+        </div>
+        <!-- <button class="person-form__button person-form__button button button--bg-main-color" type="submit">Сохранить
+          изменения</button> -->
       </div>
+      <section class="basket-cart cart">
+  <h2 class="basket-cart_title section__title visually-hidden">Корзина товаров</h2>
+  <header class="basket-cart__header cart-header">
+    <ul class="cart-header__list">
+      <li class="cart-header__item">Фото</li>
+      <li class="cart-header__item">Цвет</li>
+      <li class="cart-header__item">Размер</li>
+      <li class="cart-header__item">Цена</li>
+      <li class="cart-header__item">Количество</li>
+      <li class="cart-header__item">Сумма</li>
+    </ul>
+  </header>
+  <section class="product">
+    <div class="product__info">
+      <div class="images__thumb images__thumb--cart">
+        <picture>
+          <source type="image/avif" srcset="
+                    ./images/cart/image1@1x.avif 1x,
+                    ./images/cart/image1@2x.avif 2x">
+          <source type="image/webp" srcset="
+                    ./images/cart/image1@1x.webp 1x,
+                    ./images/cart/image1@2x.webp 2x">
+          <img src="image/jpg" srcset="
+                    ./images/cart/image1@1x.jpg 1x,
+                    ./images/cart/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+        </picture>
+
+      </div>
+      <span class="product__color">Белый</span>
+      <span class="product__size">46</span>
+      <span class="product__price">1 468.99</span>
+      <span class="product__counter">1</span>
+      <span class="product__sum">1 468.99</span>
+
+      <div class="product__control-btn">
+        <button class="button">Удалить товар</button>
+        <button class="button button--bg-main-color">В корзину</button>
+      </div>
+    </div>
+
+  </section>
+  <footer class="basket-cart__footer cart-footer"></footer>
+</section>
+
     </div>
   </div>
 </section>
+
 
   </main>
   <footer class="footer">
@@ -255,16 +247,14 @@
   </div>
 </footer>
 <div class="overlay"></div>
-
-
+  <!-- </div> -->
   <script src="js/main.min.js"></script>
-  <script src="./src/js/subscription.js"></script>
-  <!-- <script src="./src/js/selects.js"></script> -->
-  <script src="libs/choices/choices.min.js"></script>
+  <script src="./src/js/popup.js"></script>
   <script src="./src/js/accordeon.js"></script>
-  <script src="./src/js/quantity.js"></script>
+  <script src="./src/js/mymixup.js"></script>
   <script src="./src/js/footer-title.js"></script>
-
+  <!-- <script src="js/catalog.js"></script> -->
+  <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

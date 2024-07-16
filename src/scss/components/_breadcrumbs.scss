@@ -2,6 +2,8 @@
   // padding-top: 152px;
   // padding-bottom: 40px;
   margin-bottom: 36px;
+  font-size: 14px;
+  letter-spacing: normal;
 
   // @media screen and (min-width: 578.01px) and (max-width: 967px) {
   //   padding-top: 55px;
@@ -14,15 +16,12 @@
   }
 
   &__link {
-    font-size: 14px;
-    line-height: 130%;
-    letter-spacing: 0.04em;
     color: #c5c5c5;
 
     &::after {
       content: "/";
-      margin-right: 8px;
-      margin-left: 8px;
+      margin-right: 4px;
+      margin-left: 4px;
     }
 
     @include transition ($transition-property: color);
