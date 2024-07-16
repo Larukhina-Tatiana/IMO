@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин Одежда Корзина</title>
+
+  <!-- <link rel="stylesheet" href="libs/splide.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"> -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page page--profile">
+  
+
+
+  <main>
+    <section class="profile">
+  <div class="container profile__container">
+    <div class="profile__inner">
+      <h2 class="profile__title section__title">Мой профиль</h2>
+      <ul class="profile__list">
+        <li class="profile__item">
+          <dl class="profile__descr">
+            <dt class="profile__head">Контакты</dt>
+            <dd class="profile__meaning">+380 (67) 554-37-99</dd>
+          </dl>
+        </li>
+        <li class="profile__item">
+          <dl class="profile__descr">
+            <dt class="profile__head">Адрес доставки</dt>
+            <dd class="profile__meaning">г. Николаев, пр-т Героев Украины, 77/1</dd>
+          </dl>
+        </li>
+        <li class="profile__item">
+          <dl class="profile__descr">
+            <dt class="profile__head">Дата рождения</dt>
+            <dd class="profile__meaning">12.03.1972</dd>
+          </dl>
+        </li>
+        <li class="profile__item">
+          <dl class="profile__descr">
+            <dt class="profile__head">Бонусы</dt>
+            <dd class="profile__meaning">374</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="personal-data">
+  <div class="container">
+    <div class="personal-data__box grid">
+      <ul class="personal-data__nav">
+        <li class="personal-data__nav-item">
+          <button class="personal-data__nav-btn mixitup-control-active" data-filter=".pers">
+            Личные данные
+          </button>
+        </li>
+        <li class="personal-data__nav-item">
+          <button class="personal-data__nav-btn" data-filter=".orders">
+            Заказы
+          </button>
+        </li>
+        <li class="personal-data__nav-item">
+          <button class="personal-data__nav-btn" data-filter=".favorites">
+            Избранное
+          </button>
+        </li>
+        <li class="personal-data__nav-item">
+          <button class="personal-data__nav-btn" data-filter=".go-out">
+            Выйти
+          </button>
+        </li>
+      </ul>
+
+      <ul class="personal-data__content">
+
+        <ul class="personal-data__content-list mix pers">
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form">
+              <h4 class="person-form__title section__title--h4 accordeon__title">Личные данные</h4>
+              <div class="person-form__box">
+                <p class="person-form__info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M9.375 9.375H10v4.375h.625" />
+                    <path fill="currentColor" d="M9.844 7.344a.781.781 0 1 0 0-1.563.781.781 0 0 0 0 1.563Z" />
+                  </svg>Подтвердите адрес электронной почты.
+                </p>
+
+                <label class="person-form__label" for="first-name">
+                  <span class="person-form__label-necessarily">Имя</span>
+                  <input class="person-form__input" type="text" name="first-name" id="first-name" required="">
+                </label>
+                <label class="person-form__label" for="last-name">
+                  <span class="person-form__label-necessarily">Фамилия</span>
+                  <input class="person-form__input" type="text" name="last-name" id="last-name" required="">
+                </label>
+                <label class="person-form__label" for="e-mail">
+                  <span class="person-form__label-necessarily">Электронная почта</span>
+                  <input class="person-form__input" type="email" name="e-mail" id="e-mail" required="">
+                </label>
+                <label class="person-form__label" for="phone">
+                  <span class="person-form__label-necessarily">Телефон</span>
+                  <input class="person-form__input" type="tel" name="phone" id="phone" placeholder="+380" required="">
+                </label>
+                <label class="person-form__label" for="date">
+                  <span class="person-form__label-necessarily">Дата рождения</span>
+                  <input class="person-form__input" type="date" name="date" id="date" min="1940-01-01" max="2020-01-01"
+                    required="">
+                </label>
+                <input class="checkbox" type="checkbox" name="policy" id="policy" checked="">
+                <label class="checkbox__label" for="policy">
+                  <span class="checkbox__castom-icon"></span>
+                  <span class="checkbox__text">Я согласен с политикой обработки персональных данных</span>
+                </label>
+                <input class="checkbox" type="checkbox" name="electronic-checks" id="electronic-checks" checked="">
+                <label class="checkbox__label" for="electronic-checks">
+                  <span class="checkbox__castom-icon"></span>
+                  <span class="checkbox__text">Получать электронные чеки при покупке в рознице</span>
+                </label>
+
+                <button class="person-form__button person-form__button button button--bg-main-color"
+                  type="submit">Сохранить изменения</button>
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--delivery">
+              <h4 class="person-form__title section__title--h4 accordeon__title">Адрес доставки
+              </h4>
+              <div class="person-form__box">
+                <p class="person-form__info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M9.375 9.375H10v4.375h.625" />
+                    <path fill="currentColor" d="M9.844 7.344a.781.781 0 1 0 0-1.563.781.781 0 0 0 0 1.563Z" />
+                  </svg>Храните до 3-х адресов доставки, чтобы не вводить данные при каждом заказе.
+                </p>
+
+                <label class="person-form__label" for="city">
+                  <span class="person-form__label-span">Город</span>
+                  <select class="form__select person-form__input" name="city" id="city">
+                    <option value="">г. Киев</option>
+                    <option value="">г. Николаев</option>
+                    <option value="">г. Одесса</option>
+                    <option value="">г. Херсон</option>
+                  </select>
+                </label>
+                <label class="person-form__label" for="street">
+                  <span class="person-form__label-span">Улица</span>
+                  <select class="form__select person-form__input" name="street" id="street">
+                    <option value="">Выберете улицу</option>
+                    <option value="">ул. Николаевская</option>
+                    <option value="">прос. Одессы</option>
+                    <option value="">переулк Херсонский</option>
+                  </select>
+                </label>
+                <label class="person-form__label" for="houset">
+                  <span class="person-form__label-span">Дом/корпус</span>
+                  <input class="person-form__input" type="text" name="houset" id="houset" placeholder="Дом/корпус">
+                </label>
+                <label class="person-form__label" for="apartmen">
+                  <span class="person-form__label-span">Квартира/офис</span>
+                  <input class="person-form__input" type="number" name="apartmen" id="apartmen"
+                    placeholder="Квартира/офис">
+                </label>
+
+
+                <button class="person-form__button button button--bg-main-color" type="submit">Сохранить
+                  адрес</button>
+                <button class="person-form__button button button--bg-white" type="submit">+ Добавить адрес</button>
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--payment person-form--delivery">
+              <h4 class="person-form__title section__title--h4 accordeon__title">Способ оплаты</h4>
+              <div class="person-form__box">
+                <p class="person-form__info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M9.375 9.375H10v4.375h.625" />
+                    <path fill="currentColor" d="M9.844 7.344a.781.781 0 1 0 0-1.563.781.781 0 0 0 0 1.563Z" />
+                  </svg>
+                  Банковская карта для возврата не привязана!
+                </p>
+
+                <!-- <label class="person-form__label" for="city">
+                    <span class="person-form__label-span">Город</span>
+                    <select class="form__select person-form__input" name="city" id="city">
+                      <option value="">г. Киев</option>
+                      <option value="">г. Николаев</option>
+                      <option value="">г. Одесса</option>
+                      <option value="">г. Херсон</option>
+                    </select>
+                  </label> -->
+                <button class="person-form__button button button--bg-main-color" type="submit">Привязать
+                  карту</button>
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--password">
+              <h4 class="person-form__title section__title--h4 accordeon__title">Смена пароля</h4>
+              <div class="person-form__box">
+                <label class="person-form__label" for="password">
+                  <span class="person-form__label-span">Ваш текущий пароль</span>
+                  <input class="person-form__input" type="password" name="password" id="password"
+                    placeholder="Дом/корпус">
+                </label>
+                <button class="person-form__button button button--bg-main-color" type="submit">Сменить пароль</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+
+        <ul class="personal-data__content-list mix orders">
+
+        </ul>
+        <div class="personal-data__content-list mix favorites">
+
+        </div>
+        <div class="personal-data__content-list mix go-out">
+
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__info">
+        <h5 class="footer__title">Помощь
+          <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть" width="8"
+            height="6">
+        </h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="">Мой аккаунт</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Где мой магазин</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Доставка и Оплата</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">правила возврата</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">найти магазин</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">подобрать размер</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__info">
+        <h5 class="footer__title">Каталог
+          <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть" width="8"
+            height="6">
+        </h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="">новинки</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">одежда</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Обувь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">аксессуары</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Любимые бренды</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link  footer__link--red" href="">sALE%</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__info">
+        <h5 class="footer__title">Компания
+          <img class="footer__title-drop" src="./images/icons/drop-arrow.svg" alt="иконка свернуть/развернуть" width="8"
+            height="6">
+        </h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Философия бренда</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">контакты</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="">Faq</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <ul class="footer__render">
+      <li class="footer__render-item">
+        <a class="footer__render-link" href="">
+          <img src="./images/icons/visa.svg" alt="иконка карты виза" width="43">
+        </a>
+      </li>
+      <li class="footer__render-item">
+        <a class="footer__render-link" href="">
+          <img src="./images/icons/mastercard.svg" alt="иконка карты мастеркард" width="30">
+        </a>
+      </li>
+      <li class="footer__render-item">
+        <a class="footer__render-link" href="">
+          <img src="./images/icons/googlePay.svg" alt="иконка карты мастеркард" width="44">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">&#169; Copyright 2024 4:20 shop. All Rights reserved.&nbsp;</p>
+      <a class="footer__copyright-link" href="">Условия пользования сайтом</a>
+    </div>
+  </div>
+</footer>
+<div class="overlay"></div>
+  <!-- </div> -->
+  <script src="js/main.min.js"></script>
+  <script src="./src/js/subscription.js"></script>
+  <script src="./src/js/popup.js"></script>
+  <script src="./src/js/accordeon.js"></script>
+  <script src="./src/js/mymixup.js"></script>
+  <script src="./src/js/footer-title.js"></script>
+  <!-- <script src="js/catalog.js"></script> -->
+  <script src="./src/js/filters.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>

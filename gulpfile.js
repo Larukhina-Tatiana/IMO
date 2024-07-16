@@ -44,6 +44,7 @@ function htmlInclude() {
     "./src/html/catalog.html",
     "./src/html/page-card-products.html",
     "./src/html/my-profile.html",
+    "./src/html/backet.html",
     // "./src/html/positions.html",
     // "./src/html/contacts.html",
     // "./src/html/services.html",
