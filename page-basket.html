@@ -107,34 +107,39 @@
     </ul>
   </header>
   <section class="product">
-    <div class="product__info">
-      <div class="images__thumb images__thumb--cart">
-        <picture>
-          <source type="image/avif" srcset="
+  <div class="product__info">
+    <div class=" product__img images__thumb images__thumb--cart">
+      <picture>
+        <source type="image/avif" srcset="
                     ./images/cart/image1@1x.avif 1x,
                     ./images/cart/image1@2x.avif 2x">
-          <source type="image/webp" srcset="
+        <source type="image/webp" srcset="
                     ./images/cart/image1@1x.webp 1x,
                     ./images/cart/image1@2x.webp 2x">
-          <img src="image/jpg" srcset="
+        <img src="image/jpg" srcset="
                     ./images/cart/image1@1x.jpg 1x,
                     ./images/cart/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
-        </picture>
+      </picture>
 
-      </div>
-      <span class="product__color">Белый</span>
-      <span class="product__size">46</span>
-      <span class="product__price">1 468.99</span>
-      <span class="product__counter">1</span>
-      <span class="product__sum">1 468.99</span>
-
-      <div class="product__control-btn">
-        <button class="button">Удалить товар</button>
-        <button class="button button--bg-main-color">В корзину</button>
-      </div>
     </div>
+    <span class="product__color">Белый</span>
+    <span class="product__size">46</span>
+    <span class="product__price">1 468.99</span>
+    <div class="counter quantity">
+      <div class='down' onclick='decreaseCount(event, this)'>-</div>
+      <input class="counter__input" type='text' value='1'>
+      <div class='up' onclick='increaseCount(event, this)'>+</div>
+    </div>
+    <!-- <span class="product__counter">1</span> -->
+    <span class="product__sum">1 468.99</span>
 
-  </section>
+
+    <button class="product__btn-del">Удалить товар</button>
+    <button class="product__btn-basket button button--bg-main-color">В корзину</button>
+
+  </div>
+
+</section>
   <footer class="basket-cart__footer cart-footer"></footer>
 </section>
 
@@ -252,6 +257,7 @@
   <script src="./src/js/popup.js"></script>
   <script src="./src/js/accordeon.js"></script>
   <script src="./src/js/mymixup.js"></script>
+  <script src="./src/js/counter.js"></script>
   <script src="./src/js/footer-title.js"></script>
   <!-- <script src="js/catalog.js"></script> -->
   <!-- <script src="js/main.js"></script> -->

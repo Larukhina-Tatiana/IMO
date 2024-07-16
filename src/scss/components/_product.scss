@@ -1,14 +1,34 @@
 .product {
+  padding-top: 30px;
 
   &__info {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     text-align: center;
   }
 
-  &__control-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &__img {
+    grid-row: 2 span;
+  }
+
+  &__price,
+  &__sum {
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #1d1d1d;
+  }
+
+  &__btn-del {
+    width: 106px;
+    line-height: 1.7;
+    text-decoration: underline;
+  }
+
+  &__btn-basket {
+    grid-column-start: 6;
+    width: 140px;
   }
 }

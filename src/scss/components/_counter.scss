@@ -1,0 +1,41 @@
+.counter {
+  width: auto;
+  // @include adaptivevalue(height, 50, 40, 1620, 320, 1);
+  // max-width: rem(151);
+  max-height: rem(50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(3);
+  background-color: rgba(20, 20, 20, 1);
+
+
+  .up,
+  .down {
+    display: block;
+    color: var(--white);
+    font-size: rem(24);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+    // @include adaptivevalue(padding-left, 20, 10, 1620, 320, 1);
+    // @include adaptivevalue(padding-right, 20, 10, 1620, 320, 1);
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__input {
+    appearance: none;
+    // background-color: rgba(210, 210, 210, 0.07);
+    background-color: rgba(210, 210, 210, 0.9);
+    font-size: rem(18);
+    text-align: center;
+    width: rem(50);
+    // @include adaptivevalue(height, 50, 40, 1620, 320, 1);
+    line-height: 1.2;
+    border: none;
+  }
+}

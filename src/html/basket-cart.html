@@ -10,34 +10,6 @@
       <li class="cart-header__item">Сумма</li>
     </ul>
   </header>
-  <section class="product">
-    <div class="product__info">
-      <div class="images__thumb images__thumb--cart">
-        <picture>
-          <source type="image/avif" srcset="
-                    ./images/cart/image1@1x.avif 1x,
-                    ./images/cart/image1@2x.avif 2x">
-          <source type="image/webp" srcset="
-                    ./images/cart/image1@1x.webp 1x,
-                    ./images/cart/image1@2x.webp 2x">
-          <img src="image/jpg" srcset="
-                    ./images/cart/image1@1x.jpg 1x,
-                    ./images/cart/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
-        </picture>
-
-      </div>
-      <span class="product__color">Белый</span>
-      <span class="product__size">46</span>
-      <span class="product__price">1 468.99</span>
-      <span class="product__counter">1</span>
-      <span class="product__sum">1 468.99</span>
-
-      <div class="product__control-btn">
-        <button class="button">Удалить товар</button>
-        <button class="button button--bg-main-color">В корзину</button>
-      </div>
-    </div>
-
-  </section>
+  @include('product.html')
   <footer class="basket-cart__footer cart-footer"></footer>
 </section>
