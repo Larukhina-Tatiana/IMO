@@ -11,7 +11,6 @@
     padding-top: 7px;
 
     &-item {
-      padding-left: 16px;
 
       &:not(:last-child) {
         margin-bottom: 15px;
@@ -19,9 +18,12 @@
     }
 
     &-btn {
+      position: relative;
+      padding-left: 16px;
       font-weight: 500;
       line-height: 100%;
       text-transform: uppercase;
+
     }
   }
 
@@ -47,20 +49,20 @@
       background-color: #dededb;
     }
   }
-
-  .personal-data__nav-btn.mixitup-control-active {
-
-    .personal-data__nav-btn::before {
-      content: '';
-      width: 5px;
-      height: 5px;
-      border-radius: 100%;
-      background-color: var(--main-color);
-    }
-  }
 }
 
 .mixitup-control-active {
-  color: var(--primary);
-
+  &::before {
+    position: absolute;
+    margin-right: 16px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    @include transition ($transition-property: opacity);
+  }
 }
