@@ -1,50 +1,81 @@
 <section class="product">
-  <div class="product__info">
-    <div class=" product__img images__thumb images__thumb--cart">
-      <picture>
-        <source type="image/avif" srcset="
+  <ul class="product__list">
+    <li class="product__item">
+      <div class="product__info">
+        <div class=" product__img images__thumb images__thumb--cart">
+          <picture>
+            <source type="image/avif" srcset="
                     ./images/cart/image1@1x.avif 1x,
                     ./images/cart/image1@2x.avif 2x">
-        <source type="image/webp" srcset="
+            <source type="image/webp" srcset="
                     ./images/cart/image1@1x.webp 1x,
                     ./images/cart/image1@2x.webp 2x">
-        <img src="image/jpg" srcset="
+            <img src="image/jpg" srcset="
                     ./images/cart/image1@1x.jpg 1x,
                     ./images/cart/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
-      </picture>
+          </picture>
 
-    </div>
-    <span class="product__color">Белый</span>
-    <span class="product__size">46</span>
-    <span class="product__price">1 468.99</span>
-    <!-- <div class="counter quantity">
-      <div class='down' onclick='decreaseCount(event, this)'>-</div>
-      <input class="counter__input" type='text' value='1'>
-      <div class='up' onclick='increaseCount(event, this)'>+</div>
-    </div> -->
-
-    <div class="quantity">
-      <!-- <div class="quantity-button quantity-down">
-        <img src="./images//icons/quantity-down.svg" alt="icon minus">
-      </div> -->
-      <input class="product__sum" type="number" min="1" max="15" step="1" value="1">
-      <!-- <div class="quantity-button quantity-up">
-        <img src="./images/icons/quantity-up.svg" alt="icon plus">
-      </div> -->
-
-    </div>
-    <!-- <div class="counter quantity">
-      <div class='quantity-down down' onclick='decreaseCount(event, this)'>-</div>
-      <input class="counter__input" type='text' value='1'>
-      <div class='quantity-button quantity-up up' onclick='increaseCount(event, this)'>+</div>
-    </div> -->
-    <!-- <span class="product__counter">1</span> -->
-    <span class="product__sum"></span>
+        </div>
+        <span class="product__color">Белый</span>
+        <span class="product__size">46</span>
+        <span class="product__price">2 468.99</span>
 
 
-    <button class="product__btn-del">Удалить товар</button>
-    <button class="product__btn-basket button button--bg-main-color">В корзину</button>
+        <div class="quantity">
+          <div class="quantity-button quantity-down" data-action="minus">
+            <img src="./images//icons/quantity-down.svg" alt="icon minus">
+          </div>
 
-  </div>
+          <div class="quantity-current" data-counter>1</div>
+          <!-- <input class="product__sum" type="number" min="1" max="15" step="1" value="1"> -->
+          <div class="quantity-button quantity-up" data-action="plus">
+            <img src="./images/icons/quantity-up.svg" alt="icon plus">
+          </div>
+        </div>
+        <span class="product__sum">2 468.99</span>
 
+
+        <button class="product__btn-del">Удалить товар</button>
+        <button class="product__btn-basket button button--bg-main-color">В корзину</button>
+    </li>
+    <li class="product__item">
+      <div class="product__info">
+        <div class=" product__img images__thumb images__thumb--cart">
+          <picture>
+            <source type="image/avif" srcset="
+                    ./images/cart/image1@1x.avif 1x,
+                    ./images/cart/image1@2x.avif 2x">
+            <source type="image/webp" srcset="
+                    ./images/cart/image1@1x.webp 1x,
+                    ./images/cart/image1@2x.webp 2x">
+            <img src="image/jpg" srcset="
+                    ./images/cart/image1@1x.jpg 1x,
+                    ./images/cart/image1@2x.jpg 2x" loading="lazy" decoding="async" alt="images">
+          </picture>
+
+        </div>
+        <span class="product__color">Белый</span>
+        <span class="product__size">46</span>
+        <span class="product__price">1 468.99</span>
+        <div class="quantity">
+          <div class="quantity-button quantity-down" data-action="minus">
+            <img src="./images//icons/quantity-down.svg" alt="icon minus">
+          </div>
+
+          <div class="quantity-current" data-counter>1</div>
+          <!-- <input class="product__sum" type="number" min="1" max="15" step="1" value="1"> -->
+          <div class="quantity-button quantity-up" data-action="plus">
+            <img src="./images/icons/quantity-up.svg" alt="icon plus">
+          </div>
+        </div>
+        <span class="product__sum">1 468.99</span>
+
+
+        <button class="product__btn-del">Удалить товар</button>
+        <button class="product__btn-basket button button--bg-main-color">В корзину</button>
+
+      </div>
+      </div>
+    </li>
+  </ul>
 </section>

@@ -1,63 +1,32 @@
 .quantity {
-  display: inline-block;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-.quantity input {
-  width: 49px;
+  display: flex;
+  align-items: center;
+  // width: 46px;
   height: 14px;
-  display: block;
+  gap: 17px;
+}
+
+.quantity-current {
+  // width: 49px;
+  // height: 14px;
   border: none;
   background-color: transparent;
 
-
-
   font-weight: 500;
-
+  letter-spacing: normal;
   line-height: 100%;
   color: var(--main-color);
 }
 
-.quantity input:focus {
-  outline: 0;
-}
-
-.quantity-nav {
-  float: left;
-  position: static;
-  height: 42px;
-}
 
 .quantity-button {
   // position: relative;
   cursor: pointer;
-  width: rem(20);
-  height: rem(20);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  outline: rem(1) solid red;
+  width: 6px;
+  height: 7px;
+  // outline: rem(1) solid red;
 }
 
-.quantity-button.quantity-up {
-  // position: absolute;
-  // right: rem(0);
-}
-
-.quantity-button.quantity-down {
-  // position: absolute;
-  // right: rem(50);
-}
 
 // @media screen and (width < 1200.99px) {
 //   .quantity-button.quantity-up {
