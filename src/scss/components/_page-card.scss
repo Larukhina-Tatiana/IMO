@@ -76,4 +76,10 @@
   &__accordeon {
     margin-top: 20px;
   }
+
+  &__btn-basket {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
