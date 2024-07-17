@@ -17,13 +17,29 @@
     <span class="product__color">Белый</span>
     <span class="product__size">46</span>
     <span class="product__price">1 468.99</span>
-    <div class="counter quantity">
+    <!-- <div class="counter quantity">
       <div class='down' onclick='decreaseCount(event, this)'>-</div>
       <input class="counter__input" type='text' value='1'>
       <div class='up' onclick='increaseCount(event, this)'>+</div>
+    </div> -->
+
+    <div class="quantity">
+      <!-- <div class="quantity-button quantity-down">
+        <img src="./images//icons/quantity-down.svg" alt="icon minus">
+      </div> -->
+      <input class="product__sum" type="number" min="1" max="15" step="1" value="1">
+      <!-- <div class="quantity-button quantity-up">
+        <img src="./images/icons/quantity-up.svg" alt="icon plus">
+      </div> -->
+
     </div>
+    <!-- <div class="counter quantity">
+      <div class='quantity-down down' onclick='decreaseCount(event, this)'>-</div>
+      <input class="counter__input" type='text' value='1'>
+      <div class='quantity-button quantity-up up' onclick='increaseCount(event, this)'>+</div>
+    </div> -->
     <!-- <span class="product__counter">1</span> -->
-    <span class="product__sum">1 468.99</span>
+    <span class="product__sum"></span>
 
 
     <button class="product__btn-del">Удалить товар</button>

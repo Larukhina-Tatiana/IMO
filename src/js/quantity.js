@@ -1,5 +1,5 @@
 $(
-  '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="./images/icons/quantity-up.svg" alt="icon plus"></div><div class="quantity-button quantity-down"><img src="./images//icons/quantity-down.svg" alt="icon minus"></div></div>'
+  '<div class="quantity-button quantity-up"><img src="./images/icons/quantity-up.svg" alt="icon plus"></div><div class="quantity-button quantity-down"><img src="./images//icons/quantity-down.svg" alt="icon minus"></div>'
 ).insertAfter(".quantity input");
 $(".quantity").each(function () {
   var spinner = jQuery(this),
@@ -32,10 +32,12 @@ $(".quantity").each(function () {
   });
 });
 
-// $(".quantity-button").on("click", function () {
-//   var parents = $(this).parents(".holder-slider__info");
-//   let summ =
-//     $(".summ", parents).data("nights") * $(".nights", parents).val() +
-//     $(".summ", parents).data("guests") * $(".guests", parents).val();
-//   $(".summ", parents).html("$ " + summ + " UDS");
-// });
+$(".quantity-button").on("click", function () {
+  var parents = $(this).parents(".product__info");
+  let summ =
+    $(".summ", parents).data("product__sum") *
+      $(".product__sum", parents).val() +
+    $(".product__sum", parents).data("guests") * $(".guests", parents).val();
+  $(".product__sum", parents).html("$ " + summ + " грн.");
+  console.log(".sum");
+});
