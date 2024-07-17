@@ -1,4 +1,8 @@
 .basket {
+  &__box {
+    column-gap: 40px;
+  }
+
   &__info {
     grid-column: 6 span;
   }
@@ -7,7 +11,7 @@
     padding-top: 25px;
   }
 
-  &-cart {
-    grid-column: 6 span;
-  }
+  // &-cart {
+  //   grid-column: 6 span;
+  // }
 }
