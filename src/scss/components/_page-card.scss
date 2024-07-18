@@ -81,5 +81,14 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }

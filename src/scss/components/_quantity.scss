@@ -22,9 +22,14 @@
 .quantity-button {
   // position: relative;
   cursor: pointer;
-  width: 6px;
-  height: 7px;
-  // outline: rem(1) solid red;
+  width: 17px;
+  height: 14px;
+  outline: rem(1) solid red;
+
+  svg {
+    width: 14;
+    cursor: none;
+  }
 }
 
 

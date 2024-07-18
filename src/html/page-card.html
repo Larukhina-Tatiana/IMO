@@ -1,9 +1,13 @@
 <section class="page-card">
   <div class="container">
     @include('breadcrumbs.html')
-    <div class="page-card__box grid">
-      <div class="page-card__slider"></div>
-      <div class="page-card__content">
+    <div class="page-card__box grid card" data-id="01">
+
+      <div class="page-card__slider">
+        <img class="card__img" src="./images/card/image1@1x.jpg" alt="ип худи шерпа с капюшоном
+            (белый)">
+      </div>
+      <div class="page-card__content card">
         <div class="page-card__box-title">
           <h2 class="page-card__title section__title">Зип худи шерпа с капюшоном
             (белый)</h2>
@@ -34,9 +38,19 @@
           </label>
         </form>
         <div class="page-card__btn-basket">
-          <button class="product__btn-basket button button--bg-main-color">В корзину</button>
+          <button class="button button--bg-main-color button--arrow" data-cart>
+            В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="8" fill="currentColor">
+              <path fill="currentColor"
+                d="M24.354 4.354a.5.5 0 0 0 0-.708L21.172.464a.5.5 0 1 0-.707.708L23.293 4l-2.828 2.828a.5.5 0 1 0 .707.708l3.182-3.182ZM0 4.5h12v-1H0v1Zm12 0h12v-1H12v1Z" />
+            </svg>
+          </button>
           <div class="quantity">
-            <div class="quantity-button quantity-down" data-action="minus">-</div>
+            <div class="quantity-button quantity-down" data-action="minus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" fill="none">
+                <path fill="#565656" d="M0 3.312 4.84 0v6.623L0 3.312Z" />
+              </svg>
+            </div>
             <div class="quantity-current" data-counter>1</div>
             <div class="quantity-button quantity-up" data-action="plus">+</div>
           </div>
