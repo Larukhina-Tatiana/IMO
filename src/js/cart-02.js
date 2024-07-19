@@ -53,6 +53,7 @@ window.addEventListener("click", function (event) {
       // Отображаем товар в корзине
 
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+      toggleCartStatus();
     }
 
     // Сбраываем счётчикв блоке карточки товара
@@ -63,7 +64,4 @@ window.addEventListener("click", function (event) {
     event.target.closest(".product__info").remove();
     toggleCartStatus();
   }
-
-  // отображение статус корзины (пустая / заполненная)
-  toggleCartStatus();
 });
