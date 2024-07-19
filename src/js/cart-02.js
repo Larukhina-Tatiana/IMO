@@ -47,7 +47,7 @@ window.addEventListener("click", function (event) {
             <div class="quantity-button quantity-up" data-action="plus">+</div>
         </div>
         <span class="product__sum">2 468.99</span>
-        <button class="product__btn-del">Удалить товар</button>
+        <button class="product__btn-del" data-action='del'>Удалить товар</button>
       </div>`;
 
       // Отображаем товар в корзине
@@ -59,9 +59,11 @@ window.addEventListener("click", function (event) {
     card.querySelector("[data-counter]").innerText = "1";
   }
 
-  const delElement = document.querySelector(".product__btn-del");
-  $(delElement).on("click", function () {
-    console.log(event.target.closest(".product__info"));
-    // event.target.closest(".product__info").remove();
-  });
+  if (event.target.dataset.action === "del") {
+    event.target.closest(".product__info").remove();
+    toggleCartStatus();
+  }
+
+  // отображение статус корзины (пустая / заполненная)
+  toggleCartStatus();
 });
