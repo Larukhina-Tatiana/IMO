@@ -53,6 +53,7 @@ window.addEventListener("click", function (event) {
       // Отображаем товар в корзине
 
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+      this.localStorage.setItem("cart", cartItemHTML);
       toggleCartStatus();
     }
 

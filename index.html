@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
   <title>Интернет-магазин Одежда</title>
   <!-- <link rel="stylesheet" href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"> -->
 
@@ -328,15 +328,15 @@
   <div class="popular__inner">
     <div class="popular__content flex">
       <h2 class="popular__title section__title">Популярное</h2>
-      <a class="popular__link link__catalog link" href="">В каталог</a>
+      <a class="popular__link link__catalog link" href="./catalog.html">В каталог</a>
     </div>
 
     <div class="splide1 splide" aria-label="Basic Structure Example">
       <div class="splide__track">
         <ul class="popular__slider slider__list splide__list">
           <li class="splide__slide">
-            <article class="card-product">
-              <button class="card-product__favorite"></button>
+            <article class="card-product" data-id="04">
+              <button class="card-product__favorite" data-action="favorite"></button>
               <ul class="card-product__list">
                 <li class="">
                   <div class="card-product__image-cover">
@@ -355,7 +355,7 @@
                   </div>
                   <div class="card-product__price-box">
                     <p class="card-product__price">789.99 ₴</p>
-                    <button class="card-product__basket"></button>
+                    <button class="card-product__basket" data-cart></button>
                   </div>
                 </li>
                 <li class="">
@@ -774,8 +774,8 @@
       <div class="splide__track">
         <ul class="popular__slider slider__list splide__list">
           <li class="splide__slide">
-            <article class="card-product">
-              <button class="card-product__favorite"></button>
+            <article class="card-product" data-id="01">
+              <button class="card-product__favorite" data-action="favorite"></button>
               <div class="card-product__image-cover">
                 <picture class="card-product__discont">
                   <source type="image/avif" srcset="
@@ -792,7 +792,7 @@
               </div>
               <div class="card-product__price-box">
                 <p class="card-product__price">789.99 ₴</p>
-                <button class="card-product__basket"></button>
+                <button class="card-product__basket" data-cart></button>
               </div>
               <a class="card-product__link" href="">
                 <p class="card-product__name" lang="en">Stone Island</p>
@@ -801,8 +801,8 @@
             </article>
           </li>
           <li class="splide__slide">
-            <article class="card-product">
-              <button class="card-product__favorite"></button>
+            <article class="card-product" data-id="02">
+              <button class="card-product__favorite" data-action="favorite"></button>
               <div class="card-product__image-cover">
                 <picture class="card-product__discont">
                   <source type="image/avif" srcset="
@@ -819,7 +819,7 @@
               </div>
               <div class="card-product__price-box">
                 <p class="card-product__price">789.99 ₴</p>
-                <button class="card-product__basket"></button>
+                <button class="card-product__basket" data-cart></button>
               </div>
               <a class="card-product__link" href="">
                 <p class="card-product__name" lang="en">Stone Island</p>
@@ -828,8 +828,8 @@
             </article>
           </li>
           <li class="splide__slide">
-            <article class="card-product">
-              <button class="card-product__favorite"></button>
+            <article class="card-product" data-id="03">
+              <button class="card-product__favorite" data-action="favorite"></button>
               <div class="card-product__image-cover">
                 <picture class="card-product__discont">
                   <source type="image/avif" srcset="
@@ -846,7 +846,7 @@
               </div>
               <div class="card-product__price-box">
                 <p class="card-product__price">789.99 ₴</p>
-                <button class="card-product__basket"></button>
+                <button class="card-product__basket" data-cart></button>
               </div>
               <a class="card-product__link" href="">
                 <p class="card-product__name" lang="en">Stone Island</p>
@@ -910,7 +910,7 @@
           </li>
           <li class="splide__slide">
             <article class="card-product">
-              <button class="card-product__favorite"></button>
+              <button class="card-product__favorite" data-action="favorite"></button>
               <div class="card-product__image-cover">
                 <picture class="card-product__discont">
                   <source type="image/avif" srcset="
