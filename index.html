@@ -518,34 +518,45 @@
               stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <span class="chipbasket__quantity">5</span>
+
+
           <div class="chipbasket-content">
             <ul class="chipbasket__list">
-              <li class="chipbasket__item product__item">
-                <article class="chipbasket__product product__info">
-                  <img src="" loading="lazy" decoding="async" alt="&">
-                  <span class="product__color">Белый</span>
-                  <span class="product__size">46</span>
-                  <span class="product__price">2 468.99</span>
+              <li class="chipbasket__item">
+                <article class="chipbasket-product">
+                  <div class="chipbasket-product__top">
+                    <div class="chipbasket-product__row">
+                      <img class="chipbasket-product__img" src="" loading="lazy" decoding="async" alt="&">
+                      <span class="product__title">Зип худи шерпа с капюшоном (белый)</span>
+                    </div>
+                    <div class="chipbasket-product__row">
+                      <div class="product__articul">st0171</div>
+                      <div class="product__color">Белый</div>
+                      <div class="product__size">46</div>
+                      <div class="product__price">2 468.99</div>
+                    </div>
 
-                  <div class="quantity">
-                    <div class="quantity-button quantity-down" data-action="minus">-
+                    <div class="quantity">
+                      <div class="quantity-button quantity-down" data-action="minus">-
+                      </div>
+                      <div class="quantity-current" data-counter>1</div>
+                      <div class="quantity-button quantity-up" data-action="plus">+
+                      </div>
                     </div>
-                    <div class="quantity-current" data-counter>1</div>
-                    <div class="quantity-button quantity-up" data-action="plus">+
-                    </div>
+                    <span class="product__sum">2 468.99</span>
+                    <button class="chipbasket-product__btn-del" aria-label="Удалить товар" data-action='del'>X</button>
                   </div>
-                  <span class="product__sum">2 468.99</span>
-                  <button class="product__btn-del" aria-label="Удалить товар" data-action='del'>Удалить товар</button>
+                  <div class="chipbasket-product__bottom">
+                    <div class="chipbasket__fullprice">
+                      <span>Итого:</span>
+                      <span class="chipbasket-product__fullprice">2 468.99</span>
+                    </div>
+                    <a class="product__btn-basket button button--bg-main-color" href="">В корзину</a>
+                  </div>
                 </article>
               </li>
             </ul>
-            <div class="chipbasket__bottom">
-              <div class="chipbasket__fullprice">
-                <span>Итого:</span>
-                <span class="fullprice">2 468.99</span>
-                <a class="product__btn-basket button button--bg-main-color" href="">В корзину</a>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
