@@ -1,5 +1,6 @@
 .header {
-
+  position: relative;
+  z-index: 100;
 
   &__offer {
     padding: 18px 0 20px;
@@ -97,7 +98,7 @@
 
 
   &__menu-main-submenu {
-    // display: none;
+    display: none;
     position: absolute;
     width: 100%;
     top: rem(200);
@@ -295,17 +296,17 @@
     gap: rem(20);
 
 
-    & a {
-      color: var(--white);
-      @include transition ($transition-property: scale);
+    // & a {
+    //   color: var(--white);
+    //   @include transition ($transition-property: scale);
 
-      @media (any-hover: hover) {
-        &:hover {
-          // transform: translateX(8px);
-          scale: 1.2;
-        }
-      }
-    }
+    //   @media (any-hover: hover) {
+    //     &:hover {
+    //       // transform: translateX(8px);
+    //       scale: 1.2;
+    //     }
+    //   }
+    // }
   }
 
   &__search-btn {

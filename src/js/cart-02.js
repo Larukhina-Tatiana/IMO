@@ -53,9 +53,14 @@ window.addEventListener("click", function (event) {
       // Отображаем товар в корзине
 
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
-      this.localStorage.setItem("cart", cartItemHTML);
-      console.log(localStorage.setItem("cart", cartItemHTML));
       toggleCartStatus();
+      console.log(cartItemHTML);
+
+      // const updateStorage = () => {
+      // let parent = cartItemHTML;
+      this.localStorage.setItem("cart", cartItemHTML);
+      localStorage.setItem("orders", parent);
+      // };
     }
 
     // Сбраываем счётчикв блоке карточки товара
@@ -65,5 +70,6 @@ window.addEventListener("click", function (event) {
   if (event.target.dataset.action === "del") {
     event.target.closest(".product__info").remove();
     toggleCartStatus();
+    this.localStorage.setItem("cart", cartItemHTML);
   }
 });
