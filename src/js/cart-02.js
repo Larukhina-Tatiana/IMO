@@ -54,6 +54,7 @@ window.addEventListener("click", function (event) {
 
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
       this.localStorage.setItem("cart", cartItemHTML);
+      console.log(localStorage.setItem("cart", cartItemHTML));
       toggleCartStatus();
     }
 
