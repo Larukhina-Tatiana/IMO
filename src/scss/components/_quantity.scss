@@ -1,9 +1,11 @@
 .quantity {
+  margin: 0 10px;
   display: flex;
   align-items: center;
   // width: 46px;
   height: 14px;
-  gap: 17px;
+  gap: 10px;
+
 }
 
 .quantity-current {
@@ -22,9 +24,11 @@
 .quantity-button {
   // position: relative;
   cursor: pointer;
-  width: 17px;
+  // width: 17px;
   height: 14px;
-  outline: rem(1) solid red;
+  font-size: 20px;
+  font-weight: 600;
+  // outline: rem(1) solid red;
 
   svg {
     width: 14;
