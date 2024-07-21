@@ -155,6 +155,7 @@ function scripts() {
       "libs/ion.rangeSlider.js",
       "libs/jquery.formstyler.js",
       "libs/jquery.rateyo.js",
+      "libs/simplebar/simplebar.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
       "libs/choices/choices.min.js",
       "node_modules/nouislider/dist/nouislider.js",
