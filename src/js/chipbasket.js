@@ -36,17 +36,17 @@ const minusFullPrice = (currentPrice) => {
 
 const printQuantity = () => {
   let productsListLength =
-    cartProductsList.querySelector(".simplebar-content").children.length;
-  cartQuantity.textContent = productsListLength;
+    chipbasketСontentList.querySelector(".simplebar-content").children.length;
+  // cartQuantity.textContent = productsListLength;
   productsListLength > 0
-    ? cart.classList.add("active")
-    : cart.classList.remove("active");
+    ? chipbasket.classList.add("active")
+    : chipbasket.classList.remove("active");
 };
-plusFullPrice(priceNumber);
+
 const printFullPrice = () => {
   fullPrice.textContent = `${normalPrice(price)} ₽`;
 };
-printFullPrice();
+console.log(price);
 
 const generateCartProduct = (
   id,
@@ -107,8 +107,24 @@ const generateCartProduct = (
             </li>
 	`;
 };
-// console.log(generateCartProduct);
+console.log(generateCartProduct);
+const deleteProducts = (productParent) => {
+  let id = productParent.querySelector(".cart-product").dataset.id;
+  document
+    .querySelector(`.product[data-id="${id}"]`)
+    .querySelector(".product__btn").disabled = false;
 
+  let currentPrice = parseInt(
+    priceWithoutSpaces(
+      productParent.querySelector(".cart-product__price").textContent
+    )
+  );
+  minusFullPrice(currentPrice);
+  printFullPrice();
+  productParent.remove();
+
+  printQuantity();
+};
 // productBasket.forEach((el) => {
 window.addEventListener("click", function (event) {
   if (event.target.hasAttribute("data-cart")) {
@@ -122,10 +138,11 @@ window.addEventListener("click", function (event) {
     let priceNumber = parseInt(
       priceWithoutSpaces(card.querySelector(".card-product__price").textContent)
     );
-    console.log(card);
+
+    // console.log(card);
     const productInfo = {
       id: card.dataset.id,
-      imgSrc: card.querySelector(".card-product__image").getAttribute("src"),
+      img: card.querySelector(".card-product__image").getAttribute("src"),
       title: card.querySelector(".card-product__title").innerText,
       color: card.querySelector(".card-product__color").innerText,
       vendorcode: card.querySelector(".card-product__vendorcode").innerText,
@@ -133,26 +150,26 @@ window.addEventListener("click", function (event) {
       price: card.querySelector(".card-product__price").innerText,
       // counter: card.querySelector("[data-counter]").innerText,
 
-      // cartProductsList
-      //   .querySelector(".simplebar-content")
-      //   .insertAdjacentHTML(
-      //     "afterbegin",
-      //     generateCartProduct(
-      //       id,
-      //       img,
-      //       title,
-      //       price,
-      //       vendorcode,
-      //       color,
-      //       size,
-      //       fullsum
-      //     )
-      //   );
       // printQuantity();
     };
+    // console.log(productInfo);
+    chipbasketСontentList
+      .querySelector(".simplebar-content")
+      .insertAdjacentHTML(
+        "afterbegin",
+        generateCartProduct(
+          // id,
+          img,
+          title,
+          price,
+          vendorcode,
+          color,
+          size,
+          fullsum
+        )
+      );
+    printQuantity();
+    plusFullPrice(priceNumber);
     self.disabled = true;
-    console.log(productInfo);
-    console.log(priceString);
-    console.log(priceNumber);
   }
 });
