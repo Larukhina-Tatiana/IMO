@@ -80,29 +80,29 @@ if (document.querySelector(".splide1")) {
   });
   mySlider1.mount();
 }
-if (document.querySelector(".splide2")) {
-  var mySlider2 = new Splide(".splide2", {
-    perPage: 4,
-    arrows: true,
-    gap: "30px",
-    breakpoints: {
-      1199: {
-        perPage: 3,
-        gap: "30px",
-      },
-      768: {
-        perPage: 2,
-        gap: "10px",
-      },
-      // 480: {
-      //   perPage: 1,
-      //   gap: ".7rem",
-      //   height: "6rem",
-      // },
-    },
-  });
-  mySlider2.mount();
-}
+// if (document.querySelector(".splide2")) {
+//   var mySlider2 = new Splide(".splide2", {
+//     perPage: 4,
+//     arrows: true,
+//     gap: "30px",
+//     breakpoints: {
+//       1199: {
+//         perPage: 3,
+//         gap: "30px",
+//       },
+//       768: {
+//         perPage: 2,
+//         gap: "10px",
+//       },
+//       // 480: {
+//       //   perPage: 1,
+//       //   gap: ".7rem",
+//       //   height: "6rem",
+//       // },
+//     },
+//   });
+//   mySlider2.mount();
+// }
 
 if (document.querySelector(".card-product__slider")) {
   $(function () {

@@ -151,7 +151,7 @@ function scripts() {
       "libs/slick/slick.min.js",
       "./src/js/tabs.js",
       "libs/splide/splide.js",
-      "./src/js/sliders.js",
+      // "./src/js/sliders.js",
       "libs/ion.rangeSlider.js",
       "libs/jquery.formstyler.js",
       "libs/jquery.rateyo.js",
