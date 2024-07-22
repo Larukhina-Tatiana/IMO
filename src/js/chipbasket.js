@@ -34,7 +34,6 @@ const minusFullPrice = (currentPrice) => {
   return (price -= currentPrice);
 };
 
-printFullPrice();
 const printQuantity = () => {
   let productsListLength =
     cartProductsList.querySelector(".simplebar-content").children.length;
@@ -44,10 +43,10 @@ const printQuantity = () => {
     : cart.classList.remove("active");
 };
 plusFullPrice(priceNumber);
-
 const printFullPrice = () => {
   fullPrice.textContent = `${normalPrice(price)} ₽`;
 };
+printFullPrice();
 
 const generateCartProduct = (
   id,
