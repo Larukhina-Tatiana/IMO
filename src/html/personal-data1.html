@@ -1,6 +1,6 @@
 <section class="personal-data">
   <div class="container">
-    <div class="personal-data__box">
+    <div class="personal-data__box grid">
       <ul class="personal-data__nav">
         <li class="personal-data__nav-item">
           <button class="personal-data__nav-btn mixitup-control-active" data-filter=".pers">
@@ -26,14 +26,16 @@
 
       <ul class="personal-data__content">
 
-        <li class="personal-data__content-list mix pers">
-          <!-- <form class="person-form" action="/registration" method="post" id="personForm" data-js-form novalidate> -->
-          <form class="person-form" action="#" id="personForm" data-js-form novalidate>
-            <div class="personal-data__content-item">
+        <ul class="personal-data__content-list mix pers">
+          <li class="personal-data__content-item">
+
+
+
+            <form class="person-form" action="/registration" method="post" data-js-form novalidate>
               <h4 class="person-form__title section__title--h4 accordeon__title">Личные данные</h4>
-              <fieldset class="person-form__box">
+              <div class="person-form__box">
                 <p class="person-form__info">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -45,40 +47,34 @@
                 <label class="person-form__label" for="first-name">
                   <span class="person-form__label-necessarily">Имя</span>
                   <input class="person-form__input" type="text" inputmode="text" name="first-name" id="first-name"
-                    required minlength="2" maxlength="15"
-                    title="Имя должно содержать от 2 до 15 символов, быть одним словом, не содержать других символов, кроме букв"
-                    aria-errormessage="first-name-errors" pattern="^[a-zA-Z[А-Я][а-яё][а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]]+$">
+                    required minlength="2" maxlength="15" title="Имя должно содержать от 2 до 15 символов"
+                    aria-errormessage="first-name-errors">
                   <span class="form-errors" id="first-name-errors" data-js-form-field-errors></span>
                 </label>
                 <label class="person-form__label" for="last-name">
                   <span class="person-form__label-necessarily">Фамилия</span>
                   <input class="person-form__input" type="text" inputmode="text" name="last-name" id="last-name"
-                    required minlength="2" maxlength="20"
-                    title="Фамилия должна содержать от 2 до 20 символов, быть одним словом, или двойной фамилией, не содержать других символов, кроме букв и знака дефиса"
-                    aria-errormessage="last-name-errors"
-                    pattern="^[a-zA-Z[А-Я][а-яё]]+-*[a-zA-Z[А-Я][а-яё][а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]]*$">
+                    required minlength="2" maxlength="20" title="Фамилия должна содержать от 2 до 20 символов"
+                    aria-errormessage="first-name-errors">
                   <span class="form-errors" id="last-name-errors" data-js-form-field-errors></span>
                 </label>
                 <label class="person-form__label" for="e-mail">
                   <span class="person-form__label-necessarily">Электронная почта</span>
                   <input class="person-form__input" type="email" inputmode="email" name="e-mail" id="e-mail" required
-                    aria-errormessage="email-errors" pattern="^\S+@\S+\.\S+$"
-                    title="Email требует наличия символов без пробелов до и после символа @, а также минимум одной точки в доменной части">
+                    aria-errormessage="email-errors">
                   <span class="form-errors" id="email-errors" data-js-form-field-errors></span>
                 </label>
                 <label class="person-form__label" for="phone">
                   <span class="person-form__label-necessarily">Телефон</span>
                   <input class="person-form__input" type="tel" inputmode="tel" name="phone" id="phone"
                     placeholder="+380" required title="Номер телефона в формате +380999999999"
-                    aria-errormessage="phone-errors" pattern="^\+380\d{9}$">
+                    aria-errormessage="phone-errors">
                   <span class="form-errors" id="phone-errors" data-js-form-field-errors></span>
                 </label>
                 <label class="person-form__label" for="date">
                   <span class="person-form__label-necessarily">Дата рождения</span>
-                  <input class="person-form__input" onkeydown="return false" type="date" inputmode="numeric" name="date"
-                    id="date" min="1940-01-01" max="2020-01-01" required title="Поле должно быть заполнено"
-                    aria-errormessage="date-errors">
-                  <span class="form-errors" id="date-errors" data-js-form-field-errors></span>
+                  <input class="person-form__input" type="date" inputmode="numeric" name="date" id="date"
+                    min="1940-01-01" max="2020-01-01" required>
                 </label>
                 <input class="checkbox" type="checkbox" name="policy" id="policy" checked>
                 <label class="checkbox__label" for="policy">
@@ -91,17 +87,18 @@
                   <span class="checkbox__text">Получать электронные чеки при покупке в рознице</span>
                 </label>
 
-                <button class="person-form__button person-form__button button button--bg-main-color"
+                <button class="person-form__button person-form__button button button--bg-main-color" disabled
                   type="submit">Сохранить изменения</button>
-              </fieldset>
-            </div>
-            <hr>
-            <div class="decor-line"></div>
-            <div class="personal-data__content-item">
-              <h4 class="person-form__title section__title--h4 accordeon__title">Адрес доставки</h4>
-              <fieldset class="person-form__box">
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--delivery">
+              <h4 class="person-form__title section__title--h4 accordeon__title">Адрес доставки
+              </h4>
+              <div class="person-form__box">
                 <p class="person-form__info">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -138,22 +135,19 @@
                     placeholder="Квартира/офис">
                 </label>
 
-                <div class="person-form__btns">
-                  <button class="person-form__button button button--bg-main-color" type="submit" disabled>
-                    Сохранить адрес
-                  </button>
-                  <button class="person-form__button button button--bg-white" type="submit">+ Добавить адрес</button>
-                </div>
-              </fieldset>
-            </div>
-            <div class="decor-line"></div>
-            <!-- <li class="personal-data__content-item"> -->
-            <!-- <form action="#" class="person-form person-form--payment person-form--delivery"> -->
-            <div class="personal-data__content-item">
+
+                <button class="person-form__button button button--bg-main-color" type="submit" disabled>Сохранить
+                  адрес</button>
+                <button class="person-form__button button button--bg-white" type="submit">+ Добавить адрес</button>
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--payment person-form--delivery">
               <h4 class="person-form__title section__title--h4 accordeon__title">Способ оплаты</h4>
-              <fieldset class="person-form__box">
+              <div class="person-form__box">
                 <p class="person-form__info">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -163,46 +157,48 @@
                   Банковская карта для возврата не привязана!
                 </p>
 
-
-                <button class="person-form__button button button--bg-main-color" type="submit" disabled>
-                  Привязать карту
-                </button>
-              </fieldset>
-            </div>
-            <div class="decor-line"></div>
-
-            <!-- <li class="personal-data__content-item"> -->
-            <!-- <form action="#" class="person-form person-form--password"> -->
-            <!-- <div class="personal-data__content-item">
+                <!-- <label class="person-form__label" for="city">
+                    <span class="person-form__label-span">Город</span>
+                    <select class="form__select person-form__input" name="city" id="city">
+                      <option value="">г. Киев</option>
+                      <option value="">г. Николаев</option>
+                      <option value="">г. Одесса</option>
+                      <option value="">г. Херсон</option>
+                    </select>
+                  </label> -->
+                <button class="person-form__button button button--bg-main-color" type="submit" disabled>Привязать
+                  карту</button>
+              </div>
+            </form>
+          </li>
+          <li class="personal-data__content-item">
+            <form action="#" class="person-form person-form--password">
               <h4 class="person-form__title section__title--h4 accordeon__title">Смена пароля</h4>
-              <fieldset class="person-form__box">
-                
+              <div class="person-form__box">
                 <label class="person-form__label" for="password">
                   <span class="person-form__label-span person-form__label-necessarily">Ваш текущий пароль</span>
                   <input class="person-form__input" type="password" name="password" id="password" minlength="8"
                     maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required
                     title="Пароль должен быть длиной от 8 до 16 символов, включать как минимум одну цифру, одну букву в нижнем и одну букву в верхнем регистре">
-                  <span class="form-errors" id="password-errors" data-js-form-field-errors></span>
+                  <span class="form-errors" id="first-name-errors" data-js-form-field-errors></span>
                 </label>
-                <button class="person-form__button button button--bg-main-color" type="submit" disabled>
-                  Сменить пароль
-                </button>
-              </fieldset>
-            </div> -->
-          </form>
+                <button class="person-form__button button button--bg-main-color" type="submit" disabled>Сменить
+                  пароль</button>
+              </div>
+            </form>
+          </li>
+        </ul>
 
-        </li>
+        <ul class="personal-data__content-list mix orders">
 
-        <li class="personal-data__content-list mix orders">
+        </ul>
+        <div class="personal-data__content-list mix favorites">
 
-        </li>
-        <li class="personal-data__content-list mix favorites">
+        </div>
+        <div class="personal-data__content-list mix go-out">
 
-        </li>
-        <li class="personal-data__content-list mix go-out">
-
-        </li>
-      </ul>
+        </div>
     </div>
+  </div>
   </div>
 </section>

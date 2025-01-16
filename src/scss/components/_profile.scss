@@ -1,17 +1,15 @@
 .profile {
-  padding-top: 52px;
-
-  &__container {
-    max-width: 1082px;
-  }
+  padding-top: clamp(1.25rem, 0.569rem + 3.4vw, 3.25rem);
 
   &__title {
     text-align: center;
   }
 
   &__list {
-    padding-top: 60px;
-    padding-bottom: 44px;
+    // padding-top: 60px;
+    padding-top: clamp(1.25rem, 0.399rem + 4.26vw, 3.75rem);
+    // padding-bottom: 44px;
+    padding-bottom: clamp(0.938rem, 0.32rem + 3.09vw, 2.75rem);
     display: flex;
     justify-content: center;
     gap: calc(var(--valeus-gap) * 2);
@@ -44,5 +42,11 @@
     line-height: 100%;
     text-transform: uppercase;
     color: #1d1d1d;
+  }
+
+  @media screen and (width <=768px) {
+    &__list {
+      flex-direction: column;
+    }
   }
 }

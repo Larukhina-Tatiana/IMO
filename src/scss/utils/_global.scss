@@ -116,6 +116,25 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
+}
+
+button:disabled,
+button[disabled] {
+    // pointer-events: none;
+    opacity: .5;
+    cursor: not-allowed;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: var(--main-color);
+            color: var(--background);
+        }
+    }
+}
+
+fieldset {
+    border: 0 none;
 }
 
 // ul.products__list>li.products__item*4>div.products__wrapp>img.products__item-img[src=images/products-$.jpg]+p.products__item-price{10$}+h3.title-h3+p.products__item-text+button.products__button-button{Купити}
@@ -183,4 +202,19 @@ button,
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     // gap: clamp(0.625rem, 0.113rem + 2.19vw, 1.875rem);
+}
+
+.decor-line {
+    position: relative;
+    padding-bottom: calc(var(--form-gap) * 2);
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: var(--form-gap);
+        width: 100%;
+        height: 1px;
+        background-color: #dededb;
+    }
 }

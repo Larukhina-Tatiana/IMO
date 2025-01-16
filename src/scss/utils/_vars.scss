@@ -13,7 +13,8 @@
     --blue: #2f80ed;
     --scroll-track: rgba(163, 163, 163, .2);
 
-    --valeus-gap: 72px;
+    // --valeus-gap: 72px;
+    --valeus-gap: clamp(0.625rem, -5.424rem + 12.6vw, 4.5rem);
     --form-gap: 30px;
 
 
