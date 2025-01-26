@@ -84,10 +84,10 @@
         <li class="personal-data__content-list mix pers">
           <!-- <form class="person-form" action="/registration" method="post" id="personForm" data-js-form novalidate> -->
           <form class="person-form" action="#" id="personForm" data-js-form novalidate>
-            <div class="personal-data__content-item">
+            <div class="personal-data__content-item js-form-item">
               <h4 class="person-form__title section__title--h4 accordeon__title">Личные данные</h4>
               <fieldset class="person-form__box">
-                <p class="person-form__info">
+                <p class="person-form__info js-info">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
@@ -146,16 +146,16 @@
                   <span class="checkbox__text">Получать электронные чеки при покупке в рознице</span>
                 </label>
 
-                <button class="person-form__button person-form__button button button--bg-main-color"
+                <button class="person-form__button person-form__button button button--bg-main-color js-submit"
                   type="submit">Сохранить изменения</button>
               </fieldset>
             </div>
-            <hr>
+            <!-- <hr class="decor-line"> -->
             <div class="decor-line"></div>
-            <div class="personal-data__content-item">
+            <div class="personal-data__content-item js-form-item">
               <h4 class="person-form__title section__title--h4 accordeon__title">Адрес доставки</h4>
               <fieldset class="person-form__box">
-                <p class="person-form__info">
+                <p class="person-form__info js-info">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
@@ -168,19 +168,19 @@
                 <label class="person-form__label" for="city">
                   <span class="person-form__label-span">Город</span>
                   <select class="form__select person-form__input" name="city" id="city">
-                    <option value="">г. Киев</option>
-                    <option value="">г. Николаев</option>
-                    <option value="">г. Одесса</option>
-                    <option value="">г. Херсон</option>
+                    <option value="1">г. Киев</option>
+                    <option value="2">г. Николаев</option>
+                    <option value="3">г. Одесса</option>
+                    <option value="4">г. Херсон</option>
                   </select>
                 </label>
                 <label class="person-form__label" for="street">
                   <span class="person-form__label-span">Улица</span>
                   <select class="form__select person-form__input" name="street" id="street">
                     <option value="">Выберете улицу</option>
-                    <option value="">ул. Николаевская</option>
-                    <option value="">прос. Одессы</option>
-                    <option value="">переулк Херсонский</option>
+                    <option value="1">ул. Николаевская</option>
+                    <option value="2">прос. Одессы</option>
+                    <option value="3">переулк Херсонский</option>
                   </select>
                 </label>
                 <label class="person-form__label" for="houset">
@@ -194,7 +194,7 @@
                 </label>
 
                 <div class="person-form__btns">
-                  <button class="person-form__button button button--bg-main-color" type="submit" disabled>
+                  <button class="person-form__button button button--bg-main-color" type="submit">
                     Сохранить адрес
                   </button>
                   <button class="person-form__button button button--bg-white" type="submit">+ Добавить адрес</button>
@@ -204,10 +204,10 @@
             <div class="decor-line"></div>
             <!-- <li class="personal-data__content-item"> -->
             <!-- <form action="#" class="person-form person-form--payment person-form--delivery"> -->
-            <div class="personal-data__content-item">
+            <div class="personal-data__content-item js-form-item">
               <h4 class="person-form__title section__title--h4 accordeon__title">Способ оплаты</h4>
               <fieldset class="person-form__box">
-                <p class="person-form__info">
+                <p class="person-form__info js-info">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                       d="M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
@@ -228,7 +228,7 @@
 
             <!-- <li class="personal-data__content-item"> -->
             <!-- <form action="#" class="person-form person-form--password"> -->
-            <!-- <div class="personal-data__content-item">
+            <!-- <div class="personal-data__content-item js-form-item">
               <h4 class="person-form__title section__title--h4 accordeon__title">Смена пароля</h4>
               <fieldset class="person-form__box">
                 

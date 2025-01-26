@@ -99,20 +99,21 @@
 
   .checkbox__castom-icon {
     cursor: pointer;
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 20px;
-    width: clamp(1rem, 0.915rem + 0.43vw, 1.25rem);
-    height: clamp(1rem, 0.915rem + 0.43vw, 1.25rem);
+    width: 20px;
+    // width: clamp(0.938rem, 0.831rem + 0.53vw, 1.25rem);
+    // height: clamp(0.938rem, 0.831rem + 0.53vw, 1.25rem);
+    height: 20px;
     flex-shrink: 0;
     border-radius: 100%;
     border: 1px solid#c5c5c5;
     background-color: transparent;
-    @include transition ($transition-property: background-color);
 
     &::after {
+      @include transition ($transition-property: background-color);
       content: "";
       width: 10px;
       height: 10px;

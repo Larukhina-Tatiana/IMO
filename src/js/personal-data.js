@@ -55,6 +55,8 @@ class FormsValidation {
     if (isFormField && isRequired) {
       this.validateField(target);
     }
+    formData[event.target.name] = event.target.value;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
   }
 
   onChange(event) {
@@ -100,8 +102,13 @@ class FormsValidation {
       let form = document.forms.personForm;
       const formData = new FormData(form);
       console.log(Object.fromEntries(formData));
+      console.log(form.policy.checked);
+
       alert("Сбор данных");
     }
+  }
+  onPolicyChange(event) {
+    this.selectors.btn.disabled = !event.currentTarget.checked;
   }
 
   bindEvents() {
@@ -119,24 +126,26 @@ class FormsValidation {
 
 new FormsValidation();
 
-window.addEventListener("click", function (event) {
+window.addEventListener("click", makeActiveEl);
+
+function makeActiveEl(event) {
   if (event.target.closest(".person-form__box")) {
     // console.log(document.querySelector("input:focus"));
-    const activeForm = event.target.closest(".personal-data__content-item");
+    const activeForm = event.target.closest(".js-form-item");
     const activeEl = document.querySelector(".active");
 
     if (activeEl) activeEl.classList.remove("active");
 
-    if (activeForm.querySelector(".person-form__info"))
+    if (activeForm.querySelector(".js-info"))
       activeForm.querySelector(".person-form__info").classList.add("active");
   }
-});
+}
 
 const formLs = document.forms.personForm;
 formLs.addEventListener("input", onInput);
-let formData = {};
 const STORAGE_KEY = "personal-form";
 
+let formData = {};
 function onInput(event) {
   formData[event.target.name] = event.target.value;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
@@ -144,11 +153,28 @@ function onInput(event) {
 
 // Возврат из LS при обновлении страницы
 (function restoreFormOutput(form) {
-  const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+  if (localStorage.getItem(STORAGE_KEY)) {
+    formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    console.log(formData);
+    for (let key in formData) {
+      form.elements[key].value = formData[key];
+    }
+    // const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
-  if (savedFormData) {
-    Object.entries(savedFormData).forEach(([name, value]) => {
-      formLs.elements[name].value = value.trim();
-    });
+    // if (savedFormData) {
+    //   Object.entries(savedFormData).forEach(([name, value]) => {
+    //     formLs.elements[name].value = value.trim();
+    //   });
+    // }
   }
 })();
+
+// Проверка на checked
+const policyСheckbox = document.querySelector("#policy");
+const btn = document.querySelector(".js-submit");
+
+policyСheckbox.addEventListener("change", onPolicyChange);
+
+function onPolicyChange(event) {
+  btn.disabled = !event.currentTarget.checked;
+}
